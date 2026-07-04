@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>북클럽 · 책으로 삶을 읽다</title>
+<style>
+  :root{
+    --ink:#232019; --sub:#6b6357; --line:#e7e1d6; --paper:#faf7f1;
+    --gold:#a9803f; --gold-soft:#f3ead9;
+    --mom:#2f6f6a; --mom-bg:#e6f1ef;
+    --money:#8a6d1f; --money-bg:#f4eeda;
+    --soon:#9a9488; --soon-bg:#efece5;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
+    line-height:1.72; font-size:16px; letter-spacing:-.01em; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:860px; margin:0 auto; padding:0 22px 96px;}
+
+  /* Header */
+  header{padding:70px 0 34px; text-align:center; border-bottom:2px solid var(--ink); margin-bottom:8px;}
+  .eyebrow{font-size:.8rem; letter-spacing:.24em; color:var(--gold); font-weight:700; text-transform:uppercase;}
+  h1{font-size:2.5rem; line-height:1.2; margin:.5rem 0 .5rem; font-weight:800; letter-spacing:-.02em;}
+  .tagline{font-size:1.06rem; color:#3f3a30; margin:.3rem 0 0;}
+  .meta{display:flex; flex-wrap:wrap; justify-content:center; gap:6px 10px; font-size:.84rem; color:var(--sub); margin-top:18px;}
+  .meta span{background:#fff; border:1px solid var(--line); border-radius:20px; padding:3px 13px;}
+
+  /* Section */
+  section{margin-top:48px;}
+  .sec-title{font-size:.82rem; letter-spacing:.16em; color:var(--gold); font-weight:800; text-transform:uppercase;
+    text-align:center; margin-bottom:6px;}
+  .sec-lead{text-align:center; color:var(--sub); font-size:.92rem; margin:0 0 26px;}
+
+  /* Session cards */
+  .cards{display:flex; flex-direction:column; gap:20px;}
+  .card{display:grid; grid-template-columns:96px 1fr; gap:0; background:#fff; border:1px solid var(--line);
+    border-radius:16px; overflow:hidden; text-decoration:none; color:inherit;
+    box-shadow:0 2px 16px rgba(120,100,60,.05); transition:transform .15s ease, box-shadow .15s ease;}
+  a.card:hover{transform:translateY(-3px); box-shadow:0 8px 26px rgba(120,100,60,.12);}
+  .spine{display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:1.5rem; padding:14px;}
+  .card.mom .spine{background:linear-gradient(160deg,var(--mom),#3f8a7f);}
+  .card.money .spine{background:linear-gradient(160deg,var(--money),#b08a2c);}
+  .card.soon .spine{background:linear-gradient(160deg,#a7a094,#c2bbad);}
+  .body{padding:20px 22px;}
+  .badge{display:inline-block; font-size:.7rem; font-weight:800; letter-spacing:.06em; padding:3px 10px;
+    border-radius:20px; margin-bottom:9px;}
+  .card.mom .badge{background:var(--mom-bg); color:var(--mom);}
+  .card.money .badge{background:var(--money-bg); color:var(--money);}
+  .card.soon .badge{background:var(--soon-bg); color:var(--soon);}
+  .card h3{margin:0 0 3px; font-size:1.28rem; font-weight:800; letter-spacing:-.01em;}
+  .card .author{font-size:.86rem; color:var(--sub); margin:0 0 10px;}
+  .card .summary{font-size:.94rem; color:#463f34; margin:0 0 12px;}
+  .card .foot{display:flex; flex-wrap:wrap; gap:6px 8px; align-items:center; font-size:.8rem; color:var(--sub);}
+  .card .foot .dot{color:var(--line);}
+  .cta{display:inline-flex; align-items:center; gap:5px; margin-top:14px; font-size:.88rem; font-weight:800;}
+  .card.mom .cta{color:var(--mom);}
+  .card.money .cta{color:var(--money);}
+  .card.soon{opacity:.85;}
+  .card.soon .cta{color:var(--soon); font-weight:700;}
+  .tags{display:flex; flex-wrap:wrap; gap:5px; margin-top:11px;}
+  .tag{font-size:.74rem; background:#f6f1e7; border:1px solid var(--line); color:#5a5449; padding:2px 9px; border-radius:12px;}
+
+  /* about */
+  .about{margin-top:52px; padding:26px 28px; background:#fff; border:1px solid var(--line);
+    border-left:5px solid var(--gold); border-radius:14px;}
+  .about h4{margin:0 0 10px; font-size:1.1rem;}
+  .about p{margin:.5rem 0; color:#3f3a30; font-size:.95rem;}
+  .about .info{display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;}
+  .about .info span{background:var(--gold-soft); border-radius:20px; padding:4px 13px; font-size:.85rem; color:#6b5327;}
+
+  footer{margin-top:52px; padding-top:22px; border-top:1px solid var(--line); text-align:center;
+    font-size:.85rem; color:var(--sub);}
+
+  @media (max-width:560px){
+    h1{font-size:2rem;} body{font-size:15px;}
+    .card{grid-template-columns:64px 1fr;} .spine{font-size:1.1rem;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Book Club</div>
+    <h1>북클럽</h1>
+    <p class="tagline">책으로 그리스도인의 <b>삶</b>을 함께 읽고 나눕니다.</p>
+    <div class="meta">
+      <span>📖 매월 함께 한 권</span>
+      <span>🗣 읽고 · 나누고 · 살아내고</span>
+      <span>🤝 느슨하지만 깊게</span>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-title">읽은 책 · 나눈 모임</div>
+    <p class="sec-lead">카드를 누르면 그 모임의 정리를 볼 수 있습니다.</p>
+
+    <div class="cards">
+
+      <a class="card mom" href="mom/">
+        <div class="spine">몸</div>
+        <div class="body">
+          <span class="badge">서문 ~ 4장 · 정리 완료</span>
+          <h3>그리스도인의 몸 사용법</h3>
+          <p class="author">저스틴 휘트멀 얼리 · 인도 이승목 목사</p>
+          <p class="summary">하나님은 우리를 <b>있는 그대로</b> 사랑하신다 — 호흡·정신·식습관·수면, 몸으로 배우는 은혜의 리듬을 함께 읽었습니다.</p>
+          <div class="tags">
+            <span class="tag">호흡</span><span class="tag">정신</span><span class="tag">식습관</span><span class="tag">수면</span>
+          </div>
+          <div class="foot" style="margin-top:11px;">
+            <span>🗓 2026-07-01(수)</span><span class="dot">·</span><span>⏱ 96분</span>
+          </div>
+          <span class="cta">정리 보기 →</span>
+        </div>
+      </a>
+
+      <div class="card money soon">
+        <div class="spine">돈</div>
+        <div class="body">
+          <span class="badge">초대 손님 간증 · 준비 중</span>
+          <h3>돈 — 그리스도인의 재물관</h3>
+          <p class="author">초대 손님(사업가 집사님) 간증 · 인도 이승목 목사</p>
+          <p class="summary">돈은 목적이 아니라 <b>소금 같은 도구</b> — 이웃과 선한 일에 연결될 때 의미가 된다. "사람 살리는 일"을 동기로 사업을 일군 한 분의 이야기.</p>
+          <div class="tags">
+            <span class="tag">재물관</span><span class="tag">사명</span><span class="tag">창업</span><span class="tag">시니어 돌봄</span>
+          </div>
+          <div class="foot" style="margin-top:11px;">
+            <span>🗓 2026-07-03(금)</span><span class="dot">·</span><span>⏱ 95분</span>
+          </div>
+          <span class="cta">공개 준비 중 · 곧 만나요</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="about">
+    <h4>이 모임은</h4>
+    <p>한 권의 책을 함께 읽고, 각자의 삶으로 나누는 느슨한 북클럽입니다. 정답을 겨루기보다, 책이 던진 질문을 <b>내 삶에서</b> 곱씹습니다.</p>
+    <p>때로는 책 대신 <b>삶으로 그 주제를 살아낸 분</b>을 손님으로 모셔, 이야기를 듣기도 합니다.</p>
+    <div class="info">
+      <span>🗓 매월 1회</span>
+      <span>📍 201호</span>
+      <span>🕖 저녁 · 편하게</span>
+      <span>🙌 누구나 환영</span>
+    </div>
+  </div>
+
+  <footer>
+    제작 · 수영로교회 이승목 목사
+  </footer>
+
+</div>
+</body>
+</html>
