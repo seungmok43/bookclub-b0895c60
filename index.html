@@ -3,79 +3,79 @@
 <meta name="robots" content="noindex,nofollow">
 <title>BooKLove · 책으로 삶을 읽다</title>
 <style>
-:root{--ink:#232019;--sub:#6b6357;--line:#e7e1d6;--paper:#faf7f1;--gold:#a9803f;--gold-soft:#f3ead9;--card:#fffdf9;--brown:#2a2018;--wed:#2f6f6a;--fri:#8a6d1f;}
+:root{--ink:#232019;--sub:#6b6357;--line:#e7e1d6;--paper:#faf7f1;--gold:#a9803f;--gold-soft:#f3ead9;--card:#fffdf9;--wed:#2f6f6a;--fri:#8a6d1f;}
 *{box-sizing:border-box;} html{scroll-behavior:smooth;}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.7;font-size:16px;letter-spacing:-.01em;-webkit-font-smoothing:antialiased;}
-.wrap{max-width:900px;margin:0 auto;padding:0 22px 96px;}
-header{padding:66px 0 30px;text-align:center;border-bottom:2px solid var(--ink);margin-bottom:8px;}
+.wrap{max-width:940px;margin:0 auto;padding:0 22px 96px;}
+header{padding:64px 0 28px;text-align:center;border-bottom:2px solid var(--ink);margin-bottom:8px;}
 .eyebrow{font-size:.8rem;letter-spacing:.26em;color:var(--gold);font-weight:800;text-transform:uppercase;}
 h1{font-size:2.6rem;line-height:1.15;margin:.5rem 0;font-weight:800;letter-spacing:-.02em;}
 h1 b{color:var(--gold);}
 .tagline{font-size:1.05rem;color:#3f3a30;margin:.3rem 0 0;}
 .stats{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 9px;font-size:.83rem;color:var(--sub);margin-top:18px;}
 .stats span{background:#fff;border:1px solid var(--line);border-radius:20px;padding:3px 13px;}
-.toggle{display:flex;justify-content:center;gap:8px;margin:34px 0 8px;position:sticky;top:0;padding:12px 0;background:linear-gradient(var(--paper),var(--paper) 70%,rgba(250,247,241,0));z-index:5;}
-.toggle button{font-family:inherit;font-size:.92rem;font-weight:800;color:var(--sub);background:#fff;border:1px solid var(--line);border-radius:24px;padding:9px 22px;cursor:pointer;transition:.15s;letter-spacing:-.01em;}
+.toggle{display:flex;justify-content:center;gap:8px;margin:32px 0 8px;position:sticky;top:0;padding:12px 0;background:linear-gradient(var(--paper),var(--paper) 70%,rgba(250,247,241,0));z-index:5;}
+.toggle button{font-family:inherit;font-size:.92rem;font-weight:800;color:var(--sub);background:#fff;border:1px solid var(--line);border-radius:24px;padding:9px 22px;cursor:pointer;transition:.15s;}
 .toggle button:hover{border-color:var(--gold);color:var(--gold);}
 .toggle button.on{background:var(--ink);color:#fff;border-color:var(--ink);}
 .daygroup{margin-top:30px;}
 .daygroup h2{font-size:1.15rem;font-weight:800;display:flex;align-items:center;gap:8px;margin:0 0 4px;}
 .daygroup .dsub{font-size:.86rem;color:var(--sub);margin:0 0 16px;}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
-.card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 20px 16px;text-decoration:none;color:inherit;box-shadow:0 2px 14px rgba(120,100,60,.05);transition:transform .15s,box-shadow .15s,border-color .15s;}
+.card{display:grid;grid-template-columns:104px 1fr;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;box-shadow:0 2px 14px rgba(120,100,60,.05);transition:transform .15s,box-shadow .15s,border-color .15s;}
 .card:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(120,100,60,.13);border-color:#dcd2c0;}
-.ctop{display:flex;justify-content:space-between;align-items:center;margin-bottom:9px;}
+.cover{position:relative;background:var(--gold-soft);display:block;min-height:150px;}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+.cover.dz{display:flex;flex-direction:column;justify-content:space-between;padding:12px 11px;color:#f3ead7;background:linear-gradient(150deg,var(--t),#00000022),var(--t);}
+.cover.dz::after{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:rgba(255,255,255,.16);}
+.cover.dz .cv-t{font-size:.82rem;font-weight:800;line-height:1.24;letter-spacing:-.02em;text-shadow:0 1px 2px rgba(0,0,0,.2);}
+.cover.dz .cv-a{font-size:.62rem;opacity:.82;line-height:1.3;}
+.cbody{padding:16px 18px 14px;display:flex;flex-direction:column;}
+.ctop{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px;}
 .dchips{display:flex;gap:4px;}
-.dchip{font-size:.7rem;font-weight:800;padding:2px 9px;border-radius:14px;letter-spacing:.02em;}
+.dchip{font-size:.68rem;font-weight:800;padding:2px 8px;border-radius:14px;}
 .dchip.w{background:#e6f1ef;color:var(--wed);}
 .dchip.f{background:#f4eeda;color:var(--fri);}
-.cnt{font-size:.74rem;color:var(--sub);font-weight:700;}
-.card h3{margin:0 0 3px;font-size:1.16rem;font-weight:800;letter-spacing:-.01em;line-height:1.3;}
-.card .author{font-size:.83rem;color:var(--sub);margin:0 0 9px;}
-.card .sum{font-size:.9rem;color:#463f34;margin:0 0 13px;line-height:1.6;flex:1;}
-.card .foot{display:flex;justify-content:space-between;align-items:center;font-size:.78rem;color:var(--sub);}
+.cnt{font-size:.72rem;color:var(--sub);font-weight:700;}
+.card h3{margin:0 0 2px;font-size:1.06rem;font-weight:800;line-height:1.28;}
+.card .author{font-size:.8rem;color:var(--sub);margin:0 0 8px;}
+.card .sum{font-size:.85rem;color:#463f34;margin:0 0 11px;line-height:1.55;flex:1;}
+.card .foot{display:flex;justify-content:space-between;align-items:center;font-size:.76rem;color:var(--sub);}
 .card .cta{color:var(--gold);font-weight:800;}
 .about{margin-top:52px;padding:26px 28px;background:#fff;border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:14px;}
-.about h4{margin:0 0 10px;font-size:1.1rem;}
-.about p{margin:.5rem 0;color:#3f3a30;font-size:.95rem;}
+.about h4{margin:0 0 10px;font-size:1.1rem;}.about p{margin:.5rem 0;color:#3f3a30;font-size:.95rem;}
 .about .info{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
 .about .info span{background:var(--gold-soft);border-radius:20px;padding:4px 13px;font-size:.85rem;color:#6b5327;}
 footer{margin-top:46px;padding-top:22px;border-top:1px solid var(--line);text-align:center;font-size:.85rem;color:var(--sub);}
 .priv{margin-top:8px;font-size:.76rem;color:#9a9488;}
 @media(max-width:620px){h1{font-size:2.1rem;}.grid{grid-template-columns:1fr;}body{font-size:15px;}}
 </style></head><body><div class="wrap">
-<header>
-<div class="eyebrow">Book &nbsp;+&nbsp; Love</div>
-<h1>Boo<b>K</b>Love</h1>
+<header><div class="eyebrow">Book &nbsp;+&nbsp; Love</div><h1>Boo<b>K</b>Love</h1>
 <p class="tagline">책으로 그리스도인의 <b>삶</b>을 함께 읽고 나누는 <b>북클러버</b>들의 서재.</p>
-<div class="stats"><span>📚 24권을 함께</span><span>🗣 2023 – 2026, 3년의 기록</span><span>🌅 수요 오전</span><span>🌙 금요 저녁</span></div>
-</header>
+<div class="stats"><span>🌅 수요 오전</span><span>🌙 금요 저녁</span></div></header>
 <div class="toggle"><button id="tb-book" class="on" onclick="setMode('book')">📖 책별</button><button id="tb-day" onclick="setMode('day')">🗓 요일별</button></div>
 <div id="view"></div>
 <div class="about"><h4>이 서재는</h4>
-<p><b>BooKLove</b> — 책(Book)을 사랑(Love)하는 모임. 2023년 겨울부터 두 모임(🌅 수요 오전 · 🌙 금요 저녁)이 함께 한 권씩 읽고, 각자의 삶으로 나눠 왔습니다. 이 서재는 그 나눔의 기록입니다.</p>
+<p><b>BooKLove</b> — 책(Book)을 사랑(Love)하는 모임. 🌅 수요 오전과 🌙 금요 저녁, 두 모임이 함께 한 권씩 읽고 각자의 삶으로 나눠 왔습니다. 이 서재는 그 나눔의 기록입니다.</p>
 <p>멤버를 우리는 <b>북클러버(Booklover)</b>라 부릅니다. 카드를 누르면 그 책을 함께 읽으며 나눈 이야기의 정리를 볼 수 있습니다.</p>
-<div class="info"><span>🌅 수요 오전</span><span>🌙 금요 저녁</span><span>📖 매월 한 권</span><span>🙌 누구나 환영</span></div></div>
+<div class="info"><span>🌅 수요 오전</span><span>🌙 금요 저녁</span><span>🙌 누구나 환영</span></div></div>
 <footer>제작 · 수영로교회 이승목 목사<div class="priv">이 서재는 검색에 노출되지 않으며, 링크를 아는 분만 열람할 수 있습니다.</div></footer>
 </div>
 <script>
-const BOOKS=[{"t": "순전한 기독교", "a": "C.S. 루이스", "n": 14, "d": ["수", "금"], "p": "2025.10~12", "s": "도덕법에서 시작해 '착한 사람'이 아니라 '아예 새로운 피조물로의 변형'까지 올라간 14주.", "href": "mere-christianity/", "slug": "mere-christianity"}, {"t": "지혜가 필요한 시간", "a": "프랜시스 콜린스", "n": 10, "d": ["수", "금"], "p": "2025.09~10", "s": "진리·과학·신앙·신뢰라는 네 기둥을 거쳐, 지혜가 관념이 아니라 인격이신 예수임에 도달하다.", "href": "wisdom/", "slug": "wisdom"}, {"t": "매혹적인 악덕들", "a": "리베카 드영", "n": 8, "d": ["수"], "p": "2025.04~08", "s": "칠죄종이라는 거울 앞에서 안 걸리는 사람은 없다 — 거슬리지만 나를 돌아보게 한 여덟 번의 성찰.", "href": "vices/", "slug": "vices"}, {"t": "무례한 기독교", "a": "리처드 마우", "n": 7, "d": ["수", "금"], "p": "2026.01~04", "s": "확신을 내려놓지 않으면서도 다른 사람을 예수의 마음으로 존중하기 — 신념과 시민교양의 좁은 평형대.", "href": "civility/", "slug": "civility"}, {"t": "죄를 말하다", "a": "한국 설교자", "n": 4, "d": ["수", "금"], "p": "2026.05~06", "s": "죄를 끝까지 해부하되, 칼끝이 멈추는 자리는 늘 '나의 죄'가 아니라 '그 죄를 감당하신 예수'다.", "href": "sin/", "slug": "sin"}, {"t": "스토너", "a": "존 윌리엄스 · 소설", "n": 3, "d": ["금"], "p": "2026.06", "s": "세속의 잣대로는 실패한 한 평범한 생애 앞에서, '쓸모'로 나를 재던 마음을 내려놓은 세 번의 저녁.", "href": "stoner/", "slug": "stoner"}, {"t": "불안세대", "a": "조너선 하이트", "n": 3, "d": ["수", "금"], "p": "2024.09~2025.03", "s": "스마트폰은 없앨 수 없다, 대체되어야 한다 — 통제의 불안을 내려놓고 말씀의 꾸준함에 아이를 맡기기.", "href": "anxious/", "slug": "anxious"}, {"t": "내가 만든 신", "a": "팀 켈러", "n": 2, "d": ["수"], "p": "2023.12~2024.01", "s": "우상은 나쁜 것이 아니라 좋은 것에서 태어난다 — 선한 것을 궁극의 자리에 올릴 때 그것이 신이 된다.", "href": "counterfeit-gods/", "slug": "counterfeit-gods"}, {"t": "젊은 칼빈주의자에게 보내는 편지", "a": "제임스 K.A. 스미스", "n": 2, "d": ["수"], "p": "2024.01~03", "s": "개혁주의는 교리 조항이 아니라, 절대주권 아래 각자의 자리를 충성되게 살아내는 삶의 방식이다.", "href": "calvinist/", "slug": "calvinist"}, {"t": "시간을 어떻게 살 것인가", "a": "제임스 K.A. 스미스", "n": 2, "d": ["수"], "p": "2024.10~11", "s": "시간 관리법을 배우려다 시간을 통제하려는 나 자신이 부서졌다 — 시간은 은혜의 장(場)이다.", "href": "time/", "slug": "time"}, {"t": "그리스도인이 된다는 것", "a": "로완 윌리엄스", "n": 2, "d": ["수"], "p": "2025.03", "s": "세례·성경·성찬·기도 — 교리를 아는 것이 아니라 하나님을 '아버지'로 만나는 살아 있는 관계.", "href": "being-christian/", "slug": "being-christian"}, {"t": "인문학을 하나님께", "a": "저자 미상", "n": 2, "d": ["금"], "p": "2026.01", "s": "AI가 지성을 대체하는 시대, 신앙인이 붙들 마지막 근육은 '영성=관계성'과 '인내'다.", "href": "humanities/", "slug": "humanities"}, {"t": "용서를 배우다", "a": "팀 켈러", "n": 2, "d": ["금"], "p": "2026.02~03", "s": "용서는 심판자의 자리에서 내려와 정의를 하나님께 내어드리는 것 — 그 자양분은 '먼저 용서받은 은혜'.", "href": "forgive/", "slug": "forgive"}, {"t": "부모의 내면", "a": "대니얼 시겔 외", "n": 2, "d": ["수"], "p": "2026.04~05", "s": "육아서인 줄 알고 폈다가 결국 '나 자신'을 파게 되는 책 — 부모가 자기 내면을 정직하게 볼 때.", "href": "parenting/", "slug": "parenting"}, {"t": "혹시 돈 얘기 해도 될까요?", "a": "초대 손님 간증", "n": 2, "d": ["금"], "p": "2026.06~07", "s": "돈은 목적이 아니라 소금 같은 도구 — 이웃과 선한 일에 연결될 때 비로소 의미가 된다.", "href": "money/", "slug": "money/"}, {"t": "그리스도인의 몸 사용법", "a": "저스틴 얼리", "n": 1, "d": ["수"], "p": "2026.07", "s": "하나님은 우리를 있는 그대로 사랑하신다 — 호흡·정신·식습관·수면, 몸으로 배우는 은혜의 리듬.", "href": "mom/", "slug": "mom/"}, {"t": "창조 타락 구속", "a": "알버트 월터스", "n": 1, "d": ["수"], "p": "2024.02", "s": "모든 것은 '구조'가 아니라 '방향'의 문제 — 선한 창조는 폐기되지 않고 그리스도 안에서 회복된다.", "href": "creation-regained/", "slug": "creation-regained"}, {"t": "십계명과 미술사", "a": "안재경", "n": 1, "d": ["수"], "p": "2024.07", "s": "십계명은 박제된 골동품이 아니라, 문화 한복판에 심긴 세계관 — 미술사의 격변을 따라 읽다.", "href": "decalogue-art/", "slug": "decalogue-art"}, {"t": "결혼을 말하다", "a": "팀·캐시 켈러", "n": 1, "d": ["금"], "p": "2024.09", "s": "결혼은 실체가 아니라 그림자 — 그리스도와 교회의 연합을 가리키는 표지이며, 소망은 오직 그리스도.", "href": "marriage/", "slug": "marriage"}, {"t": "복음 안에서 발견한 참된 자유", "a": "팀 켈러", "n": 1, "d": ["수"], "p": "2026.05", "s": "참된 자유는 나를 더 좋게 생각하는 데 있지 않고, 나를 덜 생각하는 데 있다.", "href": "freedom/", "slug": "freedom"}, {"t": "예기치 못한 기쁨", "a": "C.S. 루이스", "n": 1, "d": ["금"], "p": "2026.04", "s": "참된 기쁨은 싫다고 발버둥 치는 나를 준엄한 명령으로 끌고 오신 예기치 못한 은혜다.", "href": "surprised-by-joy/", "slug": "surprised-by-joy"}, {"t": "창조론 연대기", "a": "만화 · 새물결", "n": 1, "d": ["금"], "p": "2026.06", "s": "창조냐 진화냐를 이기는 게 신앙이 아니다 — 복음은 논쟁의 승리가 아니라 서로의 아픔에 관심 갖는 자리.", "href": "creation-chronicle/", "slug": "creation-chronicle"}, {"t": "일과 영성", "a": "팀 켈러", "n": 1, "d": ["금"], "p": "2025.03", "s": "성(聖)과 속(俗)의 경계는 없다 — 문제는 '무엇을 하느냐'가 아니라 '누가·왜 하느냐'다.", "href": "work/", "slug": "work"}, {"t": "정의(定義) 모임 · 특별", "a": "개념 세우기", "n": 1, "d": ["금"], "p": "2025.05", "s": "'正義'가 아니라 '定義' — 세상이 흔든 가족·결혼·사랑의 개념을 아이들에게 성경적으로 다시 물려주기.", "href": "definition/", "slug": "definition"}];
+const BOOKS=[{"t": "순전한 기독교", "a": "C.S. 루이스", "n": 14, "d": ["수", "금"], "p": "2025.10~12", "s": "도덕법에서 시작해 '착한 사람'이 아니라 '아예 새로운 피조물로의 변형'까지 올라간 14주.", "href": "mere-christianity/", "slug": "mere-christianity", "tone": "#2f6f6a"}, {"t": "지혜가 필요한 시간", "a": "프랜시스 콜린스", "n": 10, "d": ["수", "금"], "p": "2025.09~10", "s": "진리·과학·신앙·신뢰라는 네 기둥을 거쳐, 지혜가 관념이 아니라 인격이신 예수임에 도달하다.", "href": "wisdom/", "slug": "wisdom", "tone": "#6b4f2a"}, {"t": "매혹적인 악덕들", "a": "리베카 드영", "n": 8, "d": ["수"], "p": "2025.04~08", "s": "칠죄종이라는 거울 앞에서 안 걸리는 사람은 없다 — 거슬리지만 나를 돌아보게 한 여덟 번의 성찰.", "href": "vices/", "slug": "vices", "tone": "#6e3b3b"}, {"t": "무례한 기독교", "a": "리처드 마우", "n": 7, "d": ["수", "금"], "p": "2026.01~04", "s": "확신을 내려놓지 않으면서도 다른 사람을 예수의 마음으로 존중하기 — 신념과 시민교양의 좁은 평형대.", "href": "civility/", "slug": "civility", "tone": "#33455e"}, {"t": "팀 켈러, 죄를 말하다", "a": "팀 켈러", "n": 4, "d": ["수", "금"], "p": "2026.05~06", "s": "죄를 끝까지 해부하되, 칼끝이 멈추는 자리는 늘 '나의 죄'가 아니라 '그 죄를 감당하신 예수'다.", "href": "sin/", "slug": "sin", "tone": "#5c5a2a"}, {"t": "스토너", "a": "존 윌리엄스 · 소설", "n": 3, "d": ["금"], "p": "2026.06", "s": "세속의 잣대로는 실패한 한 평범한 생애 앞에서, '쓸모'로 나를 재던 마음을 내려놓은 세 번의 저녁.", "href": "stoner/", "slug": "stoner", "tone": "#4f3a55"}, {"t": "불안세대", "a": "조너선 하이트", "n": 3, "d": ["수", "금"], "p": "2024.09~2025.03", "s": "스마트폰은 없앨 수 없다, 대체되어야 한다 — 통제의 불안을 내려놓고 말씀의 꾸준함에 아이를 맡기기.", "href": "anxious/", "slug": "anxious", "tone": "#8a6d1f"}, {"t": "내가 만든 신", "a": "팀 켈러", "n": 2, "d": ["수"], "p": "2023.12~2024.01", "s": "우상은 나쁜 것이 아니라 좋은 것에서 태어난다 — 선한 것을 궁극의 자리에 올릴 때 그것이 신이 된다.", "href": "counterfeit-gods/", "slug": "counterfeit-gods", "tone": "#2f5540"}, {"t": "칼빈주의와 사랑에 빠진 젊은이에게 보내는 편지", "a": "제임스 K.A. 스미스", "n": 2, "d": ["수"], "p": "2024.01~03", "s": "개혁주의는 교리 조항이 아니라, 절대주권 아래 각자의 자리를 충성되게 살아내는 삶의 방식이다.", "href": "calvinist/", "slug": "calvinist", "tone": "#8a4b2a"}, {"t": "시간 안에서 사는 법", "a": "제임스 K.A. 스미스", "n": 2, "d": ["수"], "p": "2024.10~11", "s": "시간 관리법을 배우려다 시간을 통제하려는 나 자신이 부서졌다 — 시간은 은혜의 장(場)이다.", "href": "time/", "slug": "time", "tone": "#45505a"}, {"t": "그리스도인이 된다는 것", "a": "로완 윌리엄스", "n": 2, "d": ["수"], "p": "2025.03", "s": "세례·성경·성찬·기도 — 교리를 아는 것이 아니라 하나님을 '아버지'로 만나는 살아 있는 관계.", "href": "being-christian/", "slug": "being-christian", "tone": "#5a3a2a"}, {"t": "인문학을 하나님께", "a": "한재욱", "n": 2, "d": ["금"], "p": "2026.01", "s": "AI가 지성을 대체하는 시대, 신앙인이 붙들 마지막 근육은 '영성=관계성'과 '인내'다.", "href": "humanities/", "slug": "humanities", "tone": "#3d5a4a"}, {"t": "용서를 배우다", "a": "팀 켈러", "n": 2, "d": ["금"], "p": "2026.02~03", "s": "용서는 심판자의 자리에서 내려와 정의를 하나님께 내어드리는 것 — 그 자양분은 '먼저 용서받은 은혜'.", "href": "forgive/", "slug": "forgive", "tone": "#2f6f6a"}, {"t": "부모의 내면이 아이의 세상이 된다", "a": "대니얼 J. 시겔", "n": 2, "d": ["수"], "p": "2026.04~05", "s": "육아서인 줄 알고 폈다가 결국 '나 자신'을 파게 되는 책 — 부모가 자기 내면을 정직하게 볼 때.", "href": "parenting/", "slug": "parenting", "tone": "#6b4f2a"}, {"t": "혹시 돈 얘기 해도 될까요?", "a": "초대 손님 간증", "n": 2, "d": ["금"], "p": "2026.06~07", "s": "돈은 목적이 아니라 소금 같은 도구 — 이웃과 선한 일에 연결될 때 비로소 의미가 된다.", "href": "money/", "slug": "money/", "tone": "#6e3b3b"}, {"t": "그리스도인의 몸 사용법", "a": "저스틴 얼리", "n": 1, "d": ["수"], "p": "2026.07", "s": "하나님은 우리를 있는 그대로 사랑하신다 — 호흡·정신·식습관·수면, 몸으로 배우는 은혜의 리듬.", "href": "mom/", "slug": "mom/", "tone": "#33455e"}, {"t": "창조 타락 구속", "a": "알버트 월터스", "n": 1, "d": ["수"], "p": "2024.02", "s": "모든 것은 '구조'가 아니라 '방향'의 문제 — 선한 창조는 폐기되지 않고 그리스도 안에서 회복된다.", "href": "creation-regained/", "slug": "creation-regained", "tone": "#5c5a2a"}, {"t": "십계명, 문화를 입다", "a": "안재경", "n": 1, "d": ["수"], "p": "2024.07", "s": "십계명은 박제된 골동품이 아니라, 문화 한복판에 심긴 세계관 — 미술사의 격변을 따라 읽다.", "href": "decalogue-art/", "slug": "decalogue-art", "tone": "#4f3a55"}, {"t": "결혼을 말하다", "a": "팀·캐시 켈러", "n": 1, "d": ["금"], "p": "2024.09", "s": "결혼은 실체가 아니라 그림자 — 그리스도와 교회의 연합을 가리키는 표지이며, 소망은 오직 그리스도.", "href": "marriage/", "slug": "marriage", "tone": "#8a6d1f"}, {"t": "복음 안에서 발견한 참된 자유", "a": "팀 켈러", "n": 1, "d": ["수"], "p": "2026.05", "s": "참된 자유는 나를 더 좋게 생각하는 데 있지 않고, 나를 덜 생각하는 데 있다.", "href": "freedom/", "slug": "freedom", "tone": "#2f5540"}, {"t": "예기치 못한 기쁨", "a": "C.S. 루이스", "n": 1, "d": ["금"], "p": "2026.04", "s": "참된 기쁨은 싫다고 발버둥 치는 나를 준엄한 명령으로 끌고 오신 예기치 못한 은혜다.", "href": "surprised-by-joy/", "slug": "surprised-by-joy", "tone": "#8a4b2a"}, {"t": "창조론 연대기", "a": "만화 · 새물결", "n": 1, "d": ["금"], "p": "2026.06", "s": "창조냐 진화냐를 이기는 게 신앙이 아니다 — 복음은 논쟁의 승리가 아니라 서로의 아픔에 관심 갖는 자리.", "href": "creation-chronicle/", "slug": "creation-chronicle", "tone": "#45505a"}, {"t": "일과 영성", "a": "팀 켈러", "n": 1, "d": ["금"], "p": "2025.03", "s": "성(聖)과 속(俗)의 경계는 없다 — 문제는 '무엇을 하느냐'가 아니라 '누가·왜 하느냐'다.", "href": "work/", "slug": "work", "tone": "#5a3a2a"}, {"t": "정의(定義) 모임 · 특별", "a": "개념 세우기", "n": 1, "d": ["금"], "p": "2025.05", "s": "'正義'가 아니라 '定義' — 세상이 흔든 가족·결혼·사랑의 개념을 아이들에게 성경적으로 다시 물려주기.", "href": "definition/", "slug": "definition", "tone": "#3d5a4a"}];
 function chips(d){return '<div class="dchips">'+(d.includes('수')?'<span class="dchip w">🌅수</span>':'')+(d.includes('금')?'<span class="dchip f">🌙금</span>':'')+'</div>';}
-function card(b){return `<a class="card" href="${b.href}"><div class="ctop">${chips(b.d)}<span class="cnt">${b.n}회 · ${b.p}</span></div><h3>${b.t}</h3><div class="author">${b.a}</div><p class="sum">${b.s}</p><div class="foot"><span>정리 완료</span><span class="cta">정리 보기 →</span></div></a>`;}
+function cover(b){return b.slug==='definition'?`<div class="cover dz" style="--t:${b.tone}"><div class="cv-t">${b.t}</div><div class="cv-a">${b.a}</div></div>`:`<div class="cover"><img src="covers/${b.slug}.jpg" alt="${b.t} 표지" loading="lazy"></div>`;}
+function card(b){return `<a class="card" href="${b.href}">${cover(b)}<div class="cbody"><div class="ctop">${chips(b.d)}<span class="cnt">${b.n}회 · ${b.p}</span></div><h3>${b.t}</h3><div class="author">${b.a}</div><p class="sum">${b.s}</p><div class="foot"><span>정리 완료</span><span class="cta">정리 보기 →</span></div></div></a>`;}
 function setMode(m){
   document.getElementById('tb-book').classList.toggle('on',m==='book');
   document.getElementById('tb-day').classList.toggle('on',m==='day');
   const v=document.getElementById('view');
-  if(m==='book'){
-    v.innerHTML='<div class="grid">'+BOOKS.map(card).join('')+'</div>';
-  }else{
+  if(m==='book'){v.innerHTML='<div class="grid">'+BOOKS.map(card).join('')+'</div>';}
+  else{
     const wed=BOOKS.filter(b=>b.d.includes('수')).sort((a,b)=>a.p.localeCompare(b.p));
     const fri=BOOKS.filter(b=>b.d.includes('금')).sort((a,b)=>a.p.localeCompare(b.p));
-    v.innerHTML=
-      `<div class="daygroup"><h2>🌅 수요 오전 북클럽</h2><p class="dsub">아침에 모여 읽은 책들 — 시간순 ${wed.length}권</p><div class="grid">${wed.map(card).join('')}</div></div>`+
-      `<div class="daygroup"><h2>🌙 금요 저녁 북클럽</h2><p class="dsub">저녁에 모여 읽은 책들 — 시간순 ${fri.length}권</p><div class="grid">${fri.map(card).join('')}</div></div>`;
+    v.innerHTML=`<div class="daygroup"><h2>🌅 수요 오전 북클럽</h2><p class="dsub">아침에 모여 읽은 책들 — 시간순 ${wed.length}권</p><div class="grid">${wed.map(card).join('')}</div></div><div class="daygroup"><h2>🌙 금요 저녁 북클럽</h2><p class="dsub">저녁에 모여 읽은 책들 — 시간순 ${fri.length}권</p><div class="grid">${fri.map(card).join('')}</div></div>`;
   }
 }
 setMode('book');
-</script>
-</body></html>
+</script></body></html>
