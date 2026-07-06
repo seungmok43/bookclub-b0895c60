@@ -21,6 +21,17 @@ h1 b{color:var(--gold);}
 .daygroup{margin-top:30px;}
 .daygroup h2{font-size:1.15rem;font-weight:800;display:flex;align-items:center;gap:8px;margin:0 0 4px;}
 .daygroup .dsub{font-size:.86rem;color:var(--sub);margin:0 0 16px;}
+.daypick{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px;}
+.daytile{font-family:inherit;text-align:left;cursor:pointer;border:1px solid var(--line);border-radius:18px;padding:30px 26px;background:var(--card);display:flex;flex-direction:column;gap:8px;box-shadow:0 2px 14px rgba(120,100,60,.05);transition:transform .15s,box-shadow .15s,border-color .15s;}
+.daytile:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(120,100,60,.14);border-color:#dcd2c0;}
+.daytile.w{border-top:5px solid var(--wed);}
+.daytile.f{border-top:5px solid var(--fri);}
+.daytile .dt-ic{font-size:2rem;line-height:1;}
+.daytile .dt-n{font-size:1.25rem;font-weight:800;}
+.daytile .dt-d{font-size:.9rem;color:var(--sub);line-height:1.5;}
+.daytile .dt-c{margin-top:6px;font-weight:800;color:var(--gold);font-size:.95rem;}
+.backbtn{font-family:inherit;font-size:.9rem;font-weight:800;color:var(--sub);background:#fff;border:1px solid var(--line);border-radius:20px;padding:7px 16px;cursor:pointer;margin:26px 0 2px;}
+.backbtn:hover{border-color:var(--gold);color:var(--gold);}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
 .card{display:grid;grid-template-columns:104px 1fr;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;box-shadow:0 2px 14px rgba(120,100,60,.05);transition:transform .15s,box-shadow .15s,border-color .15s;}
 .card:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(120,100,60,.13);border-color:#dcd2c0;}
@@ -48,7 +59,7 @@ h1 b{color:var(--gold);}
 .about .info span{background:var(--gold-soft);border-radius:20px;padding:4px 13px;font-size:.85rem;color:#6b5327;}
 footer{margin-top:46px;padding-top:22px;border-top:1px solid var(--line);text-align:center;font-size:.85rem;color:var(--sub);}
 .priv{margin-top:8px;font-size:.76rem;color:#9a9488;}
-@media(max-width:620px){h1{font-size:2.1rem;}.grid{grid-template-columns:1fr;}body{font-size:15px;}}
+@media(max-width:620px){h1{font-size:2.1rem;}.grid{grid-template-columns:1fr;}.daypick{grid-template-columns:1fr;}body{font-size:15px;}}
 </style></head><body><div class="wrap">
 <header><div class="eyebrow">Book &nbsp;+&nbsp; Love</div><h1>Boo<b>K</b>Love</h1>
 <p class="tagline">책으로 그리스도인의 <b>삶</b>을 함께 읽고 나누는 <b>북클러버</b>들의 서재.</p>
@@ -71,11 +82,23 @@ function setMode(m){
   document.getElementById('tb-day').classList.toggle('on',m==='day');
   const v=document.getElementById('view');
   if(m==='book'){v.innerHTML='<div class="grid">'+BOOKS.map(card).join('')+'</div>';}
-  else{
-    const wed=BOOKS.filter(b=>b.d.includes('수')).sort((a,b)=>b.k-a.k);
-    const fri=BOOKS.filter(b=>b.d.includes('금')).sort((a,b)=>b.k-a.k);
-    v.innerHTML=`<div class="daygroup"><h2>🌅 수요 오전 북클럽</h2><p class="dsub">최신순 ${wed.length}권</p><div class="grid">${wed.map(card).join('')}</div></div><div class="daygroup"><h2>🌙 금요 저녁 북클럽</h2><p class="dsub">최신순 ${fri.length}권</p><div class="grid">${fri.map(card).join('')}</div></div>`;
-  }
+  else{dayHome();}
+}
+function dayHome(){
+  const wed=BOOKS.filter(b=>b.d.includes('수')).length;
+  const fri=BOOKS.filter(b=>b.d.includes('금')).length;
+  document.getElementById('view').innerHTML=
+    '<div class="daypick">'
+    +`<button class="daytile w" onclick="showDay('수')"><span class="dt-ic">🌅</span><span class="dt-n">수요 오전 북클럽</span><span class="dt-d">한 주의 한가운데, 아침을 말씀과 책으로 여는 모임.</span><span class="dt-c">${wed}권 보기 →</span></button>`
+    +`<button class="daytile f" onclick="showDay('금')"><span class="dt-ic">🌙</span><span class="dt-n">금요 저녁 북클럽</span><span class="dt-d">한 주의 끝, 책과 나눔으로 저녁을 채우는 모임.</span><span class="dt-c">${fri}권 보기 →</span></button>`
+    +'</div>';
+}
+function showDay(day){
+  const list=BOOKS.filter(b=>b.d.includes(day)).sort((a,b)=>b.k-a.k);
+  const title=day==='수'?'🌅 수요 오전 북클럽':'🌙 금요 저녁 북클럽';
+  document.getElementById('view').innerHTML=
+    '<button class="backbtn" onclick="dayHome()">← 두 모임 선택</button>'
+    +`<div class="daygroup"><h2>${title}</h2><p class="dsub">최신순 ${list.length}권</p><div class="grid">${list.map(card).join('')}</div></div>`;
 }
 setMode('book');
 </script></body></html>
