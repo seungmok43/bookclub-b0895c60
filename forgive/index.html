@@ -35,6 +35,18 @@ article blockquote{margin:1rem 0;padding:14px 20px;background:var(--gold-soft);b
 article blockquote.q{background:#fff;border-left-color:var(--gold);font-size:1.04rem;}
 article strong{font-weight:800;}
 article code{background:#f1ece2;padding:1px 6px;border-radius:5px;font-size:.9em;}
+.timeline{margin:1.3rem 0;display:flex;flex-direction:column;gap:12px;}
+.sess{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;background:#fff;padding:15px 18px;box-shadow:0 1px 8px rgba(120,100,60,.04);}
+.sess .snum{flex:0 0 52px;text-align:center;padding-top:2px;}
+.sess .snum .n{font-size:1.5rem;font-weight:800;color:var(--gold);line-height:1;font-variant-numeric:tabular-nums;}
+.sess .snum .b{display:inline-block;margin-top:8px;font-size:.6rem;font-weight:800;padding:2px 6px;border-radius:10px;white-space:nowrap;}
+.sess .snum .b.w{background:#e6f1ef;color:#2f6f6a;}
+.sess .snum .b.f{background:#f4eeda;color:#8a6d1f;}
+.sess .sbody{flex:1;min-width:0;}
+.sess .sdate{font-size:.78rem;color:var(--sub);font-weight:700;letter-spacing:.01em;}
+.sess .spart{font-size:1.04rem;font-weight:800;margin:1px 0 6px;color:#33302a;line-height:1.35;}
+.sess .spoint{font-size:.93rem;color:#4a4235;line-height:1.62;}
+@media(max-width:560px){.sess{gap:12px;padding:13px 14px;}.sess .snum{flex-basis:42px;}.sess .snum .n{font-size:1.25rem;}}
 .tw{overflow-x:auto;margin:1rem 0;}
 article table{border-collapse:collapse;width:100%;font-size:.92rem;}
 article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top;}
