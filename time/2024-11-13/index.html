@@ -34,6 +34,15 @@ section{margin-top:44px;}
 .hc.dia{background:var(--dia-bg);border-color:#e6dcc0;border-top:3px solid var(--dia);}
 .hc.dia .qm{color:var(--dia);opacity:.4;}
 .hc.dia figcaption{color:#7a5f18;font-weight:600;}
+.storybox{max-width:720px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:36px 38px;box-shadow:0 3px 16px rgba(120,100,60,.06);}
+.ovtext{font-size:1.06rem;line-height:1.85;color:#3a3428;word-break:keep-all;text-wrap:pretty;padding-bottom:18px;border-bottom:1px dashed var(--line);margin-bottom:8px;font-style:normal;}
+.topic{margin-top:26px;}
+.topic h3{font-size:1.08rem;font-weight:800;color:var(--gold);margin-bottom:10px;word-break:keep-all;}
+.topic p{font-size:1rem;line-height:1.85;color:#3a3428;word-break:keep-all;text-wrap:pretty;margin-bottom:12px;}
+.topic p:last-child{margin-bottom:0;}
+.hldivider{display:flex;align-items:center;gap:14px;margin-top:56px;color:var(--sub);}
+.hldivider::before,.hldivider::after{content:"";flex:1;height:1px;background:var(--line);}
+.hldivider span{font-size:.85rem;font-weight:800;letter-spacing:.12em;}
 footer{margin-top:52px;text-align:center;font-size:.85rem;color:var(--sub);}
 .priv{margin-top:8px;font-size:.75rem;color:#9a9488;}
 @media(max-width:560px){.hero h1{font-size:1.7rem;}.lead{font-size:1.15rem;padding:22px;}.hc p{font-size:1.1rem;}.grid{grid-template-columns:1fr;}}
@@ -41,11 +50,13 @@ footer{margin-top:52px;text-align:center;font-size:.85rem;color:var(--sub);}
 <div class="wrap">
 <div class="top"><a class="back" href="../">← 시간 안에서 사는 법</a></div>
 <div class="hero">
-<div class="eyebrow">BooKLove · 회차 하이라이트</div>
+<div class="eyebrow">BooKLove · 그날의 기록</div>
 <h1>시간 안에서 사는 법</h1>
 <div class="meta"><span>🗓 2024-11-13 (수요 오전)</span><span>📖 2회 · 수치와 은총·크로노스와 카이로스 — 과거를 사용하시는 하나님</span><span>✍ 제임스 K.A. 스미스</span></div>
 <div class="lead"><span class="qm">“</span>부끄러운 과거조차 하나님은 버리지 않으시고, 은총으로 다시 새겨 오늘을 살아갈 뿌리로 삼으신다.</div>
 </div>
+
+<div class="hldivider"><span>✨ 하이라이트 카드</span></div>
 <section><div class="slabel"><h2>📖 책의 문장</h2><span class="cnt">7</span></div><div class="grid"><figure class="hc bookq"><span class="qm">“</span><p>우울함과 불안함 없이 우연성을 인식하는 것이야말로 가장 어려운 영적 시간 지키기 훈련 중 하나다.</p><figcaption>우연성</figcaption></figure><figure class="hc bookq"><span class="qm">“</span><p>은총은 과거를 없애는 것이 아니라 극복하게 하여, 그 과거를 오늘을 살아가는 뿌리로 바꾸는 회복이다.</p><figcaption>은총과 회복</figcaption></figure><figure class="hc bookq"><span class="qm">“</span><p>사람들은 힘듦과 잘못된 선택은 잊은 채 좋았던 기억만으로 과거로 돌아가려 하지만, 그 과거가 지금의 나를 빚었음을 잊어버린다.</p><figcaption>반전된 향수</figcaption></figure><figure class="hc bookq"><span class="qm">“</span><p>우리는 크로노스의 시간을 순차적으로 살지만, 신앙이란 그 시간 속에 카이로스가 접혀 십자가 그늘 아래 함께 서는 순간이다.</p><figcaption>크로노스와 카이로스</figcaption></figure><figure class="hc bookq"><span class="qm">“</span><p>과거와 현재와 미래가 뫼비우스의 띠처럼 연결되어, 오늘의 갑갑함마저 미래의 뿌리가 된다.</p><figcaption>시간의 연결</figcaption></figure><figure class="hc bookq"><span class="qm">“</span><p>베르그송의 말처럼 시간은 공간처럼 나눌 수 없다. 서로 스며들고 녹아내리며, 그 녹아내림을 통해 하나님이 은혜를 빚어가신다.</p><figcaption>스며드는 시간</figcaption></figure><figure class="hc bookq"><span class="qm">“</span><p>인생은 던져진 것이어서 허무한 게 아니다. 스스로 의미를 부여하는 것이 아니라, 하나님이 은혜로 우리를 빚어가신다.</p><figcaption>던져짐과 빚어감</figcaption></figure></div></section>
 <section><div class="slabel"><h2>🕊 고백과 나눔</h2><span class="cnt">5</span></div><div class="grid"><figure class="hc conf"><span class="qm">“</span><p>청년 때는 인간도 아니었다 싶을 만큼 부끄러운 짓을 많이 했다. 그 수치에 갇혀 있었는데, 하나님이 그것조차 은총으로 바꾸신다는 걸 깨달으니 하나도 버릴 것이 없더라.</p><figcaption>— 한 참석자</figcaption></figure><figure class="hc conf"><span class="qm">“</span><p>나는 과거로 돌아가고 싶은 생각이 조금도 없다. 너무 불행했던 그 시간을 다시 겪고 싶지 않다. 그저 지금 현재를 충실히, 미래도 지금처럼 평온하게 살고 싶다.</p><figcaption>— 한 참석자</figcaption></figure><figure class="hc conf"><span class="qm">“</span><p>무의식의 기억을 붙들고 기도했더니, 나는 상처받은 것만 기억했는데 그 사람이 받은 상처를 보게 하셨다. 복음만이 가해자·피해자의 이분법을 넘어 회복시킨다는 걸 다시 외쳤다.</p><figcaption>— 한 참석자</figcaption></figure><figure class="hc conf"><span class="qm">“</span><p>새로운 사람으로 리셋되어야 한다고 생각했는데, 과거를 다 지우는 게 아니라 그것을 가지고 가며 하나님이 나를 다듬으신다는 걸 알았다. 여전히 과거에 매여 아프기만 했던 나를 돌아본다.</p><figcaption>— 한 참석자</figcaption></figure><figure class="hc conf"><span class="qm">“</span><p>시간을 쪼개 계획 세우길 좋아하지만 지켜내지 못할 때 자괴감이 컸다. '숨 쉬는 한 나는 소망한다'—미래가 현재로 스며든다는 말에서, 소망의 방향을 정할 때 오늘 하루가 쌓여 그곳에 도착함을 보았다.</p><figcaption>— 한 참석자</figcaption></figure></div></section>
 <section><div class="slabel"><h2>💬 대화</h2><span class="cnt">4</span></div><div class="grid"><figure class="hc dia"><span class="qm">“</span><p>이 시대 최대의 적은 바쁨입니다. 가까운 5분 거리를 천천히 걸어보니, 그렇게 살지 않으면 하나님이 주신 시간들을 그냥 스쳐 지나가더라고요.</p><figcaption>이승목 목사가 '슬로우 영성'을 인용하며 바쁨을 경계함</figcaption></figure><figure class="hc dia"><span class="qm">“</span><p>그 사진작가는 결정적 순간에 셔터를 누르지 않았습니다. 어떤 순간은 카메라를 통해 보지 않고, 내가 그 시간에 온전히 스며들어 누리고 싶어서라고요.</p><figcaption>이승목 목사가 영화를 빌려 순간에 스며드는 삶을 이야기함</figcaption></figure><figure class="hc dia"><span class="qm">“</span><p>십자가를 올려다보는 건 엄두도 못 내지만, 그 그늘 밑에만 있어도 내 고통이 이것쯤은 하고 한없이 작아집니다.</p><figcaption>한 참석자가 카이로스의 순간을 십자가 그늘로 표현</figcaption></figure><figure class="hc dia"><span class="qm">“</span><p>빙빙 도는 물레가 의미 없어 보였는데, 주님이 새끼손가락을 대는 순간 밋밋하던 진흙에 빗살과 무늬가 생기더라고요.</p><figcaption>이승목 목사가 시간을 토기장이의 물레에 빗댐</figcaption></figure></div></section>

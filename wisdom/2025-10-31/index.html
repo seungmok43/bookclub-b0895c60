@@ -34,6 +34,15 @@ section{margin-top:44px;}
 .hc.dia{background:var(--dia-bg);border-color:#e6dcc0;border-top:3px solid var(--dia);}
 .hc.dia .qm{color:var(--dia);opacity:.4;}
 .hc.dia figcaption{color:#7a5f18;font-weight:600;}
+.storybox{max-width:720px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:36px 38px;box-shadow:0 3px 16px rgba(120,100,60,.06);}
+.ovtext{font-size:1.06rem;line-height:1.85;color:#3a3428;word-break:keep-all;text-wrap:pretty;padding-bottom:18px;border-bottom:1px dashed var(--line);margin-bottom:8px;font-style:normal;}
+.topic{margin-top:26px;}
+.topic h3{font-size:1.08rem;font-weight:800;color:var(--gold);margin-bottom:10px;word-break:keep-all;}
+.topic p{font-size:1rem;line-height:1.85;color:#3a3428;word-break:keep-all;text-wrap:pretty;margin-bottom:12px;}
+.topic p:last-child{margin-bottom:0;}
+.hldivider{display:flex;align-items:center;gap:14px;margin-top:56px;color:var(--sub);}
+.hldivider::before,.hldivider::after{content:"";flex:1;height:1px;background:var(--line);}
+.hldivider span{font-size:.85rem;font-weight:800;letter-spacing:.12em;}
 footer{margin-top:52px;text-align:center;font-size:.85rem;color:var(--sub);}
 .priv{margin-top:8px;font-size:.75rem;color:#9a9488;}
 @media(max-width:560px){.hero h1{font-size:1.7rem;}.lead{font-size:1.15rem;padding:22px;}.hc p{font-size:1.1rem;}.grid{grid-template-columns:1fr;}}
@@ -41,11 +50,13 @@ footer{margin-top:52px;text-align:center;font-size:.85rem;color:var(--sub);}
 <div class="wrap">
 <div class="top"><a class="back" href="../">← 지혜가 필요한 시간</a></div>
 <div class="hero">
-<div class="eyebrow">BooKLove · 회차 하이라이트</div>
+<div class="eyebrow">BooKLove · 그날의 기록</div>
 <h1>지혜가 필요한 시간</h1>
 <div class="meta"><span>🗓 2025-10-31 (금요 저녁)</span><span>📖 9회 · 완독 — 희망과 행동·회복, 지혜의 핵심은 사랑</span><span>✍ 프랜시스 콜린스</span></div>
 <div class="lead"><span class="qm">“</span>어리석다는 소리를 들어도 세상이 선하게 바뀔 거라는 믿음으로, 갇히지 말고 밖으로 나가 사랑으로 사는 것 — 그것이 이 시대의 지혜다.</div>
 </div>
+
+<div class="hldivider"><span>✨ 하이라이트 카드</span></div>
 <section><div class="slabel"><h2>📖 책의 문장</h2><span class="cnt">4</span></div><div class="grid"><figure class="hc bookq"><span class="qm">“</span><p>복잡한 문제에는 간단한 오답이 있다. 한 가지 원인이 아니라 다양한 원인에서 비롯되는데, 너무 단순하게 생각하니 양극화가 생긴다.</p><figcaption>양극화</figcaption></figure><figure class="hc bookq"><span class="qm">“</span><p>하나님께서 여러분에게 세상을 바꿀 수 있다는 어리석은 믿음을 허락하시기를.</p><figcaption>희망과 행동</figcaption></figure><figure class="hc bookq"><span class="qm">“</span><p>나쁜 감정에 감염되지 않고 그리스도의 사랑이라는 정신 면역력으로 사람을 판단하지 않는 자리에 서 있어야 한다.</p><figcaption>정신 면역력</figcaption></figure><figure class="hc bookq"><span class="qm">“</span><p>회복은 정확한 정보를 전달하는 것을 넘어, 그 정보를 적시성 있게 전하여 마음을 열고 교류가 일어나게 하는 데 있다.</p><figcaption>회복과 경청</figcaption></figure></div></section>
 <section><div class="slabel"><h2>🕊 고백과 나눔</h2><span class="cnt">5</span></div><div class="grid"><figure class="hc conf"><span class="qm">“</span><p>어린 시절의 한 상처 자국 때문에 사람들의 시선을 두려워하며 상처받기 전에 먼저 가시를 세우는 것이 나를 지키는 방법이라 여겼는데, 하나님을 만나 상대가 주지도 않은 짐까지 내가 안고 있을 필요가 없음을 깨달았다.</p><figcaption>— 한 참석자</figcaption></figure><figure class="hc conf"><span class="qm">“</span><p>과학과 DNA를 파고들다가 오히려 창조주 하나님의 실재가 합리적으로 설득되었고, 그런 사건들이 쌓여 지금까지 신앙이 자라온 것 같다.</p><figcaption>— 한 참석자</figcaption></figure><figure class="hc conf"><span class="qm">“</span><p>건강한 몸, 학습하는 뇌, 기도하는 영 — 이 세 가지를 구별해 운동하고 학습하고 말씀·기도의 시간을 따로 떼어 실천하며 영적 체력을 기르기로 했다.</p><figcaption>— 한 참석자</figcaption></figure><figure class="hc conf"><span class="qm">“</span><p>교회 안에만 있으면 다 아멘 하며 내 민낯을 볼 기회가 없어 자꾸 착각하게 된다. 아이를 일반 학교에 보내서라도 믿지 않는 이웃과 부딪히며 살아야겠다고 마음을 바꿨다.</p><figcaption>— 한 참석자</figcaption></figure><figure class="hc conf"><span class="qm">“</span><p>영적으로 신뢰했던 분에게 와르르 무너지는 일을 겪으며, 사람은 신뢰의 대상이 아니라 그에게도 임재하실 하나님을 신뢰하기에 사람을 사랑하고 신뢰할 힘이 생김을 배웠다.</p><figcaption>— 한 참석자</figcaption></figure></div></section>
 <section><div class="slabel"><h2>💬 대화</h2><span class="cnt">3</span></div><div class="grid"><figure class="hc dia"><span class="qm">“</span><p>설득하지 마세요. 기독교는 설득의 종교가 아니라 사랑을 선포하고 사랑으로 살아가는 것입니다.</p><figcaption>이승목 목사가 믿지 않는 이를 어떻게 설득하느냐는 물음에</figcaption></figure><figure class="hc dia"><span class="qm">“</span><p>기독교 예배의 마지막 엔딩은 반드시 샌딩(sending)입니다. 우리끼리가 아니라 다 세상으로 보내는 것이죠.</p><figcaption>이승목 목사, 흩어지는 예배를 두고</figcaption></figure><figure class="hc dia"><span class="qm">“</span><p>불과 2년 만에 완전히 변화된 한 분을 심방했는데, 논리적 설득도 감격의 눈물도 없이 아내가 묵묵히 기도하며 버티니 때가 차서 뒤집어졌다고 하더라.</p><figcaption>이승목 목사의 심방 나눔, 성령의 일하심</figcaption></figure></div></section>

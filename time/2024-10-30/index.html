@@ -34,6 +34,15 @@ section{margin-top:44px;}
 .hc.dia{background:var(--dia-bg);border-color:#e6dcc0;border-top:3px solid var(--dia);}
 .hc.dia .qm{color:var(--dia);opacity:.4;}
 .hc.dia figcaption{color:#7a5f18;font-weight:600;}
+.storybox{max-width:720px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:36px 38px;box-shadow:0 3px 16px rgba(120,100,60,.06);}
+.ovtext{font-size:1.06rem;line-height:1.85;color:#3a3428;word-break:keep-all;text-wrap:pretty;padding-bottom:18px;border-bottom:1px dashed var(--line);margin-bottom:8px;font-style:normal;}
+.topic{margin-top:26px;}
+.topic h3{font-size:1.08rem;font-weight:800;color:var(--gold);margin-bottom:10px;word-break:keep-all;}
+.topic p{font-size:1rem;line-height:1.85;color:#3a3428;word-break:keep-all;text-wrap:pretty;margin-bottom:12px;}
+.topic p:last-child{margin-bottom:0;}
+.hldivider{display:flex;align-items:center;gap:14px;margin-top:56px;color:var(--sub);}
+.hldivider::before,.hldivider::after{content:"";flex:1;height:1px;background:var(--line);}
+.hldivider span{font-size:.85rem;font-weight:800;letter-spacing:.12em;}
 footer{margin-top:52px;text-align:center;font-size:.85rem;color:var(--sub);}
 .priv{margin-top:8px;font-size:.75rem;color:#9a9488;}
 @media(max-width:560px){.hero h1{font-size:1.7rem;}.lead{font-size:1.15rem;padding:22px;}.hc p{font-size:1.1rem;}.grid{grid-template-columns:1fr;}}
@@ -41,11 +50,13 @@ footer{margin-top:52px;text-align:center;font-size:.85rem;color:var(--sub);}
 <div class="wrap">
 <div class="top"><a class="back" href="../">← 시간 안에서 사는 법</a></div>
 <div class="hero">
-<div class="eyebrow">BooKLove · 회차 하이라이트</div>
+<div class="eyebrow">BooKLove · 그날의 기록</div>
 <h1>시간 안에서 사는 법</h1>
 <div class="meta"><span>🗓 2024-10-30 (수요 오전)</span><span>📖 1회 · 「시간 안에서 사는 법」 서문·도입 — 씨줄과 날줄, 시간을 빚으시는 하나님</span><span>✍ 제임스 K.A. 스미스</span></div>
 <div class="lead"><span class="qm">“</span>매일의 풍랑 같은 시간을 견디다가도, 가끔 드론을 띄워 보면 하나님이 내 인생 전체를 하나의 작품으로 빚고 계셨다.</div>
 </div>
+
+<div class="hldivider"><span>✨ 하이라이트 카드</span></div>
 <section><div class="slabel"><h2>📖 책의 문장</h2><span class="cnt">7</span></div><div class="grid"><figure class="hc bookq"><span class="qm">“</span><p>시간이 씨줄이라면 우리는 날줄을 하루하루 엮어간다. 촘촘해질수록 인생이라는 천이 짜여 간다.</p><figcaption>씨줄과 날줄</figcaption></figure><figure class="hc bookq"><span class="qm">“</span><p>매일은 풍랑 이는 바다를 건너듯 살아가지만, 가끔 드론을 띄워 넓은 시야로 보면 그 바다 건너에 하나님이 약속하신 땅이 있다.</p><figcaption>드론과 프레임</figcaption></figure><figure class="hc bookq"><span class="qm">“</span><p>과거는 믿음으로 하나님께 맡기고 미래는 소망으로 맡기니, 지금 내가 할 일은 오직 사랑뿐이다.</p><figcaption>믿음·소망·사랑</figcaption></figure><figure class="hc bookq"><span class="qm">“</span><p>주님은 시간의 골짜기마다 큐빅과 다이아몬드를 박듯 우리를 새기시는데, 다른 세계관에 서면 그저 폭삭 늙은 고생으로만 보인다.</p><figcaption>시간의 조각</figcaption></figure><figure class="hc bookq"><span class="qm">“</span><p>성경만큼 지금 이 순간을 소중히 여기는 세계관은 없다. 하나님은 이생의 한 번뿐인 시간을 주셨기 때문이다.</p><figcaption>지금의 무게</figcaption></figure><figure class="hc bookq"><span class="qm">“</span><p>죽음 앞에 선 사람들은 에펠탑을 못 봤다고 후회하지 않는다. 더 용서하고 더 사랑하지 못한 것을 후회한다.</p><figcaption>마지막의 후회</figcaption></figure><figure class="hc bookq"><span class="qm">“</span><p>안식일은 예수님이 다시 오셔서 누릴 영원한 안식을 미리 연습하는 시간이다.</p><figcaption>안식의 연습</figcaption></figure></div></section>
 <section><div class="slabel"><h2>🕊 고백과 나눔</h2><span class="cnt">6</span></div><div class="grid"><figure class="hc conf"><span class="qm">“</span><p>인생이 빨리 끝났으면 좋겠다고 생각하며 살았는데, 큐티와 이 책이 하나로 맞물리며 힘든 시간마저 하나님이 귀하게 쓰실 것을 기대하게 되었다.</p><figcaption>— 한 참석자</figcaption></figure><figure class="hc conf"><span class="qm">“</span><p>믿음이 좋아 보이려 집사로 섬겼지만, 정작 결혼할 때 기도 한번 해본 적이 없었다. 처음 본 청년이 '결혼의 기도 응답이 무엇이었냐'고 묻는데 큰 망치로 얻어맞은 듯 부끄러웠다.</p><figcaption>— 한 참석자</figcaption></figure><figure class="hc conf"><span class="qm">“</span><p>고등학생 딸에게 시간을 아끼라고 다그치며, A밖에 안 되는 아이에게 Z를 심어주고 있었다. 책을 읽으며 하나님이 하실 일을 내가 가로막고 있었음을 보았다.</p><figcaption>— 한 참석자</figcaption></figure><figure class="hc conf"><span class="qm">“</span><p>사랑방에 무너져 온 자매를 함께 붙들고 주차장에서, 시댁 근처에서 기도했더니 극적으로 회복되었다. 죽음 같은 자리의 사람들이 하루하루 기적으로 살아나는 걸 본다.</p><figcaption>— 한 참석자</figcaption></figure><figure class="hc conf"><span class="qm">“</span><p>함께하던 자매가 갑작스러운 상실을 겪었다. 처음엔 충격이었지만, 기도하며 하나님이 새 계획으로 그를 쓰시려는 것임을 확신하게 되었다.</p><figcaption>— 한 참석자</figcaption></figure><figure class="hc conf"><span class="qm">“</span><p>누나의 죽음이라는 상실을 통해 '나는 어떻게 살 것인가'를 처음 고민했고, 낮은 곳으로 가는 목회자의 길로 인도받았다. 원대한 꿈이 정반대로 흘러간 그 모든 계기에 다 이유가 있었다.</p><figcaption>— 한 참석자</figcaption></figure></div></section>
 <section><div class="slabel"><h2>💬 대화</h2><span class="cnt">3</span></div><div class="grid"><figure class="hc dia"><span class="qm">“</span><p>이 책을 미처 읽지 못하고 와서 저는 텅 빈 라켓으로 테니스를 하는 것 같습니다. 여러분의 나눔으로 줄이 촘촘해지면 공을 잘 받을 수 있을 텐데요.</p><figcaption>한 참석자가 준비 없이 온 자신을 줄 없는 테니스 라켓에 빗댐</figcaption></figure><figure class="hc dia"><span class="qm">“</span><p>폭삭 늙는 시간은 차라리 잘라내 버리고 싶지만, 주님은 바로 그 시절을 통해 우리 안에 어마어마한 것을 새기고 계십니다. 다른 세계관에 서면 그저 고생일 뿐이죠.</p><figcaption>이승목 목사가 고난의 시간을 하나님의 조각으로 풀이</figcaption></figure><figure class="hc dia"><span class="qm">“</span><p>그렇게 힘든 사람을 만나면 저는 너무 슬픈데, 권사님은 회복되어 가는 사람을 만나는 게 기쁨이라 하시니 참 다르네요.</p><figcaption>한 참석자가 다른 참석자의 사역 기질을 부러워하며 나눈 대목</figcaption></figure></div></section>
