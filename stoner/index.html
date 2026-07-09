@@ -2,68 +2,77 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
 <title>스토너 · BooKLove</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.2/NanumMyeongjo.css">
 <style>
-:root{--ink:#232019;--sub:#6b6357;--line:#e7e1d6;--paper:#faf7f1;--gold:#a9803f;--gold-soft:#f3ead9;--card:#fffdf9;--brown:#2a2018;}
-*{box-sizing:border-box;} html{scroll-behavior:smooth;}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.75;font-size:16px;letter-spacing:-.01em;-webkit-font-smoothing:antialiased;}
-.wrap{max-width:820px;margin:0 auto;padding:0 22px 90px;}
+:root{--bg:#FBF9F4;--surface:#F3EEE4;--ink:#23201B;--muted:#6B6459;--accent:#9A3B2E;--line:#E3DCCF;
+--wed:#3f6f63;--wed-soft:#e7f0ec;--fri:#8a6d1f;--fri-soft:#f4eeda;
+--serif:'Nanum Myeongjo',Georgia,'Apple SD Gothic Neo',serif;
+--sans:'Pretendard','Apple SD Gothic Neo','맑은 고딕',system-ui,sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0;} html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.8;font-size:18px;
+letter-spacing:-.003em;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+img{max-width:100%;height:auto;display:block;}
+.wrap{max-width:680px;margin:0 auto;padding:0 24px 100px;}
 a{color:inherit;}
 
-.top{padding:26px 0 0;}
-.back{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;color:var(--sub);text-decoration:none;border:1px solid var(--line);background:#fff;padding:6px 14px;border-radius:20px;}
-.back:hover{color:var(--gold);border-color:var(--gold);}
-.hero{padding:30px 0 26px;border-bottom:2px solid var(--ink);margin-bottom:10px;}
-.hero .eyebrow{font-size:.76rem;letter-spacing:.22em;color:var(--gold);font-weight:800;text-transform:uppercase;}
-.hero h1{font-size:2.3rem;line-height:1.2;margin:.4rem 0 .3rem;font-weight:800;letter-spacing:-.02em;text-wrap:balance;}
-.hero .author{font-size:1.02rem;color:#3f3a30;}
-.hero .chips{display:flex;flex-wrap:wrap;gap:6px 8px;margin-top:16px;}
-.hero .chips span{background:#fff;border:1px solid var(--line);border-radius:20px;padding:4px 13px;font-size:.82rem;color:var(--sub);}
-.heroflex{display:flex;gap:24px;align-items:flex-start;}
-.hcover{flex:0 0 138px;}
-.hcover img{width:138px;height:auto;border-radius:8px;box-shadow:0 8px 24px rgba(80,60,30,.20);display:block;}
-.herotext{flex:1;min-width:0;}
-@media(max-width:560px){.heroflex{gap:16px;}.hcover{flex:0 0 100px;}.hcover img{width:100px;}.herotext h1{font-size:1.7rem;}}
-article{font-size:1.02rem;}
-article h2{font-size:1.4rem;margin:2.2rem 0 .7rem;padding-top:1.2rem;border-top:1px solid var(--line);font-weight:800;letter-spacing:-.01em;}
-article h3{font-size:1.12rem;margin:1.5rem 0 .5rem;font-weight:800;color:#33302a;}
-article h4{font-size:1rem;margin:1.1rem 0 .4rem;font-weight:800;color:var(--gold);}
-article p{margin:.7rem 0;}
-article ul,article ol{margin:.6rem 0;padding-left:1.3rem;}
-article li{margin:.3rem 0;}
-article hr{border:none;border-top:1px solid var(--line);margin:1.6rem 0;}
-article blockquote{margin:1rem 0;padding:14px 20px;background:var(--gold-soft);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;color:#4a4235;}
-article blockquote.q{background:#fff;border-left-color:var(--gold);font-size:1.04rem;}
-article strong{font-weight:800;}
-article code{background:#f1ece2;padding:1px 6px;border-radius:5px;font-size:.9em;}
-.timeline{margin:1.3rem 0;display:flex;flex-direction:column;gap:12px;}
-.sess{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;background:#fff;padding:15px 18px;box-shadow:0 1px 8px rgba(120,100,60,.04);}
-.sess .snum{flex:0 0 52px;text-align:center;padding-top:2px;}
-.sess .snum .n{font-size:1.5rem;font-weight:800;color:var(--gold);line-height:1;font-variant-numeric:tabular-nums;}
-.sess .snum .b{display:inline-block;margin-top:8px;font-size:.6rem;font-weight:800;padding:2px 6px;border-radius:10px;white-space:nowrap;}
-.sess .snum .b.w{background:#e6f1ef;color:#2f6f6a;}
-.sess .snum .b.f{background:#f4eeda;color:#8a6d1f;}
+.top{padding:24px 0 0;}
+.back{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--muted);text-decoration:none;letter-spacing:.01em;}
+.back:hover{color:var(--accent);}
+.hero{padding:44px 0 30px;border-bottom:1px solid var(--line);margin-bottom:14px;text-align:center;}
+.hero .eyebrow{font-size:12px;letter-spacing:.26em;color:var(--accent);font-weight:700;text-transform:uppercase;}
+.hero h1{font-family:var(--serif);font-size:clamp(2rem,1.5rem+2.5vw,3rem);line-height:1.2;margin:16px 0 8px;font-weight:700;letter-spacing:-.01em;word-break:keep-all;text-wrap:balance;}
+.hero .author{font-size:16px;color:var(--muted);}
+.hero .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:20px;}
+.hero .chips span{background:#fff;border:1px solid var(--line);border-radius:22px;padding:5px 15px;font-size:13px;color:var(--muted);font-weight:600;}
+.hcover{margin:0 auto 24px;width:150px;}
+.hcover img{width:150px;height:auto;border-radius:6px;box-shadow:0 12px 30px rgba(80,60,30,.20);display:block;}
+@media(max-width:560px){.hcover{width:118px;}.hcover img{width:118px;}}
+article{font-size:18px;}
+article h2{font-family:var(--serif);font-size:clamp(1.5rem,1.2rem+1.2vw,1.85rem);margin:3rem 0 1rem;padding-top:2rem;border-top:1px solid var(--line);font-weight:700;letter-spacing:-.01em;line-height:1.3;}
+article h3{font-family:var(--serif);font-size:1.3rem;margin:2rem 0 .6rem;font-weight:700;color:var(--ink);}
+article h4{font-family:var(--serif);font-size:1.12rem;margin:1.4rem 0 .5rem;font-weight:700;color:var(--accent);}
+article p{margin:1.1rem 0;line-height:1.85;color:var(--ink);word-break:keep-all;}
+article ul,article ol{margin:1rem 0;padding-left:1.4rem;}
+article li{margin:.5rem 0;line-height:1.8;word-break:keep-all;}
+article hr{border:none;border-top:1px solid var(--line);margin:2.4rem 0;}
+article blockquote{margin:1.6rem 0;padding:4px 0 4px 24px;border-left:3px solid var(--accent);color:var(--ink);}
+article blockquote p{font-family:var(--serif);font-size:1.2rem;line-height:1.7;margin:.4rem 0;word-break:keep-all;}
+article blockquote.q{border-left-color:#3f6f63;}
+article strong{font-weight:700;}
+article code{background:var(--surface);padding:2px 7px;border-radius:5px;font-size:.9em;}
+.timeline{margin:1.6rem 0;display:flex;flex-direction:column;gap:14px;}
+.sess{display:flex;gap:18px;border:1px solid var(--line);border-radius:16px;background:#fff;padding:18px 20px;box-shadow:0 2px 12px rgba(120,100,60,.05);transition:transform .16s,box-shadow .16s,border-color .16s;}
+.sess.has:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(120,100,60,.12);border-color:#d8cdba;}
+.sess .snum{flex:0 0 50px;text-align:center;padding-top:2px;}
+.sess .snum .n{font-family:var(--serif);font-size:1.7rem;font-weight:700;color:var(--accent);line-height:1;font-variant-numeric:tabular-nums;}
+.sess .snum .b{display:inline-block;margin-top:9px;font-size:11px;font-weight:700;padding:2px 8px;border-radius:12px;white-space:nowrap;letter-spacing:.02em;}
+.sess .snum .b.w{background:var(--wed-soft);color:var(--wed);}
+.sess .snum .b.f{background:var(--fri-soft);color:var(--fri);}
 .sess .sbody{flex:1;min-width:0;}
-.sess .sdate{font-size:.78rem;color:var(--sub);font-weight:700;letter-spacing:.01em;}
-.sess .spart{font-size:1.04rem;font-weight:800;margin:1px 0 6px;color:#33302a;line-height:1.35;}
-.sess .spoint{font-size:.93rem;color:#4a4235;line-height:1.62;}
+.sess .sdate{font-size:13px;color:var(--muted);font-weight:600;letter-spacing:.01em;}
+.sess .spart{font-family:var(--serif);font-size:1.14rem;font-weight:700;margin:3px 0 7px;color:var(--ink);line-height:1.4;word-break:keep-all;}
+.sess .spoint{font-size:15px;color:#4a4235;line-height:1.7;word-break:keep-all;}
 .sess.has{border-color:#e2d3b4;}
-.sess .slink{display:inline-flex;align-items:center;gap:5px;margin-top:11px;font-size:.83rem;font-weight:800;color:var(--gold);text-decoration:none;background:var(--gold-soft);border:1px solid #e7d9bd;padding:6px 13px;border-radius:20px;transition:.15s;}
-.sess .slink:hover{background:var(--gold);color:#fff;border-color:var(--gold);}
-@media(max-width:560px){.sess{gap:12px;padding:13px 14px;}.sess .snum{flex-basis:42px;}.sess .snum .n{font-size:1.25rem;}}
-.tw{overflow-x:auto;margin:1rem 0;}
-article table{border-collapse:collapse;width:100%;font-size:.92rem;}
-article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top;}
-article th{background:var(--gold-soft);font-weight:800;}
-footer{margin-top:48px;padding-top:22px;border-top:1px solid var(--line);text-align:center;font-size:.85rem;color:var(--sub);}
-.priv{margin-top:10px;font-size:.76rem;color:#9a9488;}
-@media(max-width:560px){.hero h1{font-size:1.8rem;}body{font-size:15px;}}
+.sess .slink{display:inline-flex;align-items:center;gap:5px;margin-top:13px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;letter-spacing:.01em;transition:.15s;}
+.sess .slink:hover{color:var(--ink);}
+@media(max-width:560px){.sess{gap:14px;padding:15px 16px;}.sess .snum{flex-basis:42px;}.sess .snum .n{font-size:1.4rem;}}
+.tw{overflow-x:auto;margin:1.4rem 0;}
+article table{border-collapse:collapse;width:100%;font-size:15px;}
+article th,article td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top;}
+article th{background:var(--surface);font-weight:700;}
+footer{margin-top:80px;padding:40px 0 20px;border-top:1px solid var(--line);text-align:center;}
+.foot-mark{font-family:var(--serif);font-size:18px;color:var(--ink);}
+.priv{margin-top:10px;font-size:13px;color:#9a9488;}
+@media(max-width:560px){body{font-size:16px;}article{font-size:16px;}}
 </style></head><body><div class="wrap">
 <div class="top"><a class="back" href="../">← BooKLove 목록</a></div>
 <div class="hero"><div class="eyebrow">BooKLove · 북클럽 정리</div>
-<div class="heroflex"><div class="hcover"><img src="../covers/stoner.jpg" alt="스토너 표지"></div><div class="herotext">
+<div class="hcover"><img src="../covers/stoner.jpg" alt="스토너 표지"></div>
 <h1>스토너</h1><div class="author">존 윌리엄스 · 소설</div>
-<div class="chips"><span>📚 3회 (2026-06-05 ~ 2026-06-12, 금요 저녁)</span></div></div></div></div>
-<article><h2>회차별 흐름</h2><div class="timeline"><div class="sess has"><div class="snum"><div class="n">1</div><span class="b f">🌙 금요</span></div><div class="sbody"><div class="sdate">2026-06-05</div><div class="spart">「스토너」 도입 — 부르심과 평범한 삶의 의미</div><div class="spoint">세속의 잣대로는 루저의 삶일지라도, 부르심으로 받아들인 자리에서 묵묵히 견디는 것 자체가 성공한 인생일 수 있다.</div><a class="slink" href="2026-06-05/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">2</div><span class="b f">🌙 금요</span></div><div class="sbody"><div class="sdate">2026-06-12</div><div class="spart">「스토너」 완독·전체 총평 — 노동·쓸모·삶의 의미</div><div class="spoint">무언가를 이뤄야 쓸모 있다는 세상의 회로 앞에서, 하나님은 쓸모가 아니라 사랑이 흘러넘쳐 우리를 지으셨다는 복음이 스토너의 공허를 비춘다.</div><a class="slink" href="2026-06-12/">이 회차 나눔·카드뉴스 보기 →</a></div></div></div><blockquote><strong>세속의 잣대로는 실패해 보이는 한 평범한 사람의 조용한 생애 앞에서, "쓸모"로 자신을 재던 우리가 "하나님은 쓸모가 아니라 사랑이 흘러넘쳐 나를 지으셨다"는 자리로 돌아온 세 번의 저녁.</strong></blockquote>
+<div class="chips"><span>3회 (2026-06-05 ~ 2026-06-12, 금요 저녁)</span></div></div>
+<article><h2>회차별 흐름</h2><div class="timeline"><div class="sess has"><div class="snum"><div class="n">1</div><span class="b f">금요</span></div><div class="sbody"><div class="sdate">2026-06-05</div><div class="spart">「스토너」 도입 — 부르심과 평범한 삶의 의미</div><div class="spoint">세속의 잣대로는 루저의 삶일지라도, 부르심으로 받아들인 자리에서 묵묵히 견디는 것 자체가 성공한 인생일 수 있다.</div><a class="slink" href="2026-06-05/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">2</div><span class="b f">금요</span></div><div class="sbody"><div class="sdate">2026-06-12</div><div class="spart">「스토너」 완독·전체 총평 — 노동·쓸모·삶의 의미</div><div class="spoint">무언가를 이뤄야 쓸모 있다는 세상의 회로 앞에서, 하나님은 쓸모가 아니라 사랑이 흘러넘쳐 우리를 지으셨다는 복음이 스토너의 공허를 비춘다.</div><a class="slink" href="2026-06-12/">이 회차 나눔·카드뉴스 보기 →</a></div></div></div><blockquote><strong>세속의 잣대로는 실패해 보이는 한 평범한 사람의 조용한 생애 앞에서, "쓸모"로 자신을 재던 우리가 "하나님은 쓸모가 아니라 사랑이 흘러넘쳐 나를 지으셨다"는 자리로 돌아온 세 번의 저녁.</strong></blockquote>
 <h2>모임 개요</h2>
 <p>금요 저녁조가 존 윌리엄스의 장편소설 『스토너』를 3회(6/5 두 번의 녹취로 나뉜 한 모임 + 6/12)에 걸쳐 완독했다. 신학서가 아니라 <strong>문학(소설)</strong>이다. 한 대학 영문학 교수 윌리엄 스토너의 평범하고 조용한 일생을 담담하게 따라가는 작품 — "아침에 일어나 출근하고, 어떤 사람을 만나고, 참 힘들었고, 담담히 하루를 써 내려가는" 문체, 카타르시스도 영웅도 없는 "독립영화·예술영화" 같은 결이라고 참석자들은 입을 모았다.</p>
 <p>이 소설이 북클럽에 오른 경위 자체가 결을 말해 준다. 직전에 함께 읽던 『죄를 말하다』에서 <strong>죄</strong> 이야기를 나누던 중, 스토너의 삶이 떠오른다는 언급이 나와 자연스럽게 이어졌다. 진행자는 "맨날 편한 책만 읽지 말고, 안 읽히는 책, 완전히 다른 생각을 하게 하는 책을 읽는 연습이 필요하다"며 이 소설을 권했다. 실제로 참석자 다수가 "소설을 10년 만에 읽었다", "소설 읽는 감각이 없는 줄 알았다"고 고백할 만큼, 자극적이지 않은 소설을 신앙 공동체가 함께 읽고 토론하는 것 자체가 하나의 도전이자 "없었던 감각"을 얻는 훈련이 되었다.</p>
@@ -111,5 +120,7 @@ footer{margin-top:48px;padding-top:22px;border-top:1px solid var(--line);text-al
 <ol><li>나는 지금 내 인생을 "쓸모"로 재단하고 있지 않은가? 쓸모가 없어져도 하나님이 사랑으로 나를 지으셨다는 사실이 흔들리지 않는가?</li><li>나는 무엇을 "이것만은 절대 놓칠 수 없다"고 여기는가 — 그것이 혹 나의 우상(스토너의 일처럼)은 아닌가?</li><li>나는 소명을 "특별한 무언가"에서 찾느라, 지금 이 자리·이 관계·이 일이 곧 부르심임을 놓치고 있지 않은가?</li><li>나의 비교 기준점은 상대방인가, 하나님의 말씀인가? 무엇이 내 노동과 삶을 볼품없게 만드는가?</li><li>오늘이 마지막 날이라면 나는 무엇을 손에 쥐고 싶은가 — 자기만족의 결과물인가, 함께 가자 하시는 주님인가?</li></ol>
 <h2>연결</h2>
 <ul><li>죄를 말하다 — 이 소설을 불러온 직전 도서('죄' 시리즈)</li><li>창조론 연대기 — 다음에 읽기로 한 만화책(웹툰)</li><li>침묵 (엔도 슈사쿠) — 자기 의미 부여와 신앙의 진위를 두고 함께 언급된 영화</li><li>쓸모없는 창조 — 이번 모임의 핵심 신학 렌즈</li><li>소명과 부르심</li><li>평범한 삶의 존엄</li><li>노동의 신학</li><li>실존주의와 기독교 세계관</li><li>비교 회로 — 쓸모의 우상</li><li>신정론 — 욥과 시편 23편</li><li>팀 켈러 — 하나님을 말하다</li></ul></article>
-<footer>제작 · 안나간성도<div class="priv">이 페이지는 검색에 노출되지 않으며, 링크를 아는 분만 열람할 수 있습니다.</div></footer>
+<footer><div class="foot-mark">BooKLove</div>
+<div class="priv">제작 · 안나간성도</div>
+<div class="priv">이 페이지는 검색에 노출되지 않으며, 링크를 아는 분만 열람할 수 있습니다.</div></footer>
 </div></body></html>

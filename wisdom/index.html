@@ -2,67 +2,76 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
 <title>지혜가 필요한 시간 · BooKLove</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.2/NanumMyeongjo.css">
 <style>
-:root{--ink:#232019;--sub:#6b6357;--line:#e7e1d6;--paper:#faf7f1;--gold:#a9803f;--gold-soft:#f3ead9;--card:#fffdf9;--brown:#2a2018;}
-*{box-sizing:border-box;} html{scroll-behavior:smooth;}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.75;font-size:16px;letter-spacing:-.01em;-webkit-font-smoothing:antialiased;}
-.wrap{max-width:820px;margin:0 auto;padding:0 22px 90px;}
+:root{--bg:#FBF9F4;--surface:#F3EEE4;--ink:#23201B;--muted:#6B6459;--accent:#9A3B2E;--line:#E3DCCF;
+--wed:#3f6f63;--wed-soft:#e7f0ec;--fri:#8a6d1f;--fri-soft:#f4eeda;
+--serif:'Nanum Myeongjo',Georgia,'Apple SD Gothic Neo',serif;
+--sans:'Pretendard','Apple SD Gothic Neo','맑은 고딕',system-ui,sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0;} html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.8;font-size:18px;
+letter-spacing:-.003em;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+img{max-width:100%;height:auto;display:block;}
+.wrap{max-width:680px;margin:0 auto;padding:0 24px 100px;}
 a{color:inherit;}
 
-.top{padding:26px 0 0;}
-.back{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;color:var(--sub);text-decoration:none;border:1px solid var(--line);background:#fff;padding:6px 14px;border-radius:20px;}
-.back:hover{color:var(--gold);border-color:var(--gold);}
-.hero{padding:30px 0 26px;border-bottom:2px solid var(--ink);margin-bottom:10px;}
-.hero .eyebrow{font-size:.76rem;letter-spacing:.22em;color:var(--gold);font-weight:800;text-transform:uppercase;}
-.hero h1{font-size:2.3rem;line-height:1.2;margin:.4rem 0 .3rem;font-weight:800;letter-spacing:-.02em;text-wrap:balance;}
-.hero .author{font-size:1.02rem;color:#3f3a30;}
-.hero .chips{display:flex;flex-wrap:wrap;gap:6px 8px;margin-top:16px;}
-.hero .chips span{background:#fff;border:1px solid var(--line);border-radius:20px;padding:4px 13px;font-size:.82rem;color:var(--sub);}
-.heroflex{display:flex;gap:24px;align-items:flex-start;}
-.hcover{flex:0 0 138px;}
-.hcover img{width:138px;height:auto;border-radius:8px;box-shadow:0 8px 24px rgba(80,60,30,.20);display:block;}
-.herotext{flex:1;min-width:0;}
-@media(max-width:560px){.heroflex{gap:16px;}.hcover{flex:0 0 100px;}.hcover img{width:100px;}.herotext h1{font-size:1.7rem;}}
-article{font-size:1.02rem;}
-article h2{font-size:1.4rem;margin:2.2rem 0 .7rem;padding-top:1.2rem;border-top:1px solid var(--line);font-weight:800;letter-spacing:-.01em;}
-article h3{font-size:1.12rem;margin:1.5rem 0 .5rem;font-weight:800;color:#33302a;}
-article h4{font-size:1rem;margin:1.1rem 0 .4rem;font-weight:800;color:var(--gold);}
-article p{margin:.7rem 0;}
-article ul,article ol{margin:.6rem 0;padding-left:1.3rem;}
-article li{margin:.3rem 0;}
-article hr{border:none;border-top:1px solid var(--line);margin:1.6rem 0;}
-article blockquote{margin:1rem 0;padding:14px 20px;background:var(--gold-soft);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;color:#4a4235;}
-article blockquote.q{background:#fff;border-left-color:var(--gold);font-size:1.04rem;}
-article strong{font-weight:800;}
-article code{background:#f1ece2;padding:1px 6px;border-radius:5px;font-size:.9em;}
-.timeline{margin:1.3rem 0;display:flex;flex-direction:column;gap:12px;}
-.sess{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;background:#fff;padding:15px 18px;box-shadow:0 1px 8px rgba(120,100,60,.04);}
-.sess .snum{flex:0 0 52px;text-align:center;padding-top:2px;}
-.sess .snum .n{font-size:1.5rem;font-weight:800;color:var(--gold);line-height:1;font-variant-numeric:tabular-nums;}
-.sess .snum .b{display:inline-block;margin-top:8px;font-size:.6rem;font-weight:800;padding:2px 6px;border-radius:10px;white-space:nowrap;}
-.sess .snum .b.w{background:#e6f1ef;color:#2f6f6a;}
-.sess .snum .b.f{background:#f4eeda;color:#8a6d1f;}
+.top{padding:24px 0 0;}
+.back{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--muted);text-decoration:none;letter-spacing:.01em;}
+.back:hover{color:var(--accent);}
+.hero{padding:44px 0 30px;border-bottom:1px solid var(--line);margin-bottom:14px;text-align:center;}
+.hero .eyebrow{font-size:12px;letter-spacing:.26em;color:var(--accent);font-weight:700;text-transform:uppercase;}
+.hero h1{font-family:var(--serif);font-size:clamp(2rem,1.5rem+2.5vw,3rem);line-height:1.2;margin:16px 0 8px;font-weight:700;letter-spacing:-.01em;word-break:keep-all;text-wrap:balance;}
+.hero .author{font-size:16px;color:var(--muted);}
+.hero .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:20px;}
+.hero .chips span{background:#fff;border:1px solid var(--line);border-radius:22px;padding:5px 15px;font-size:13px;color:var(--muted);font-weight:600;}
+.hcover{margin:0 auto 24px;width:150px;}
+.hcover img{width:150px;height:auto;border-radius:6px;box-shadow:0 12px 30px rgba(80,60,30,.20);display:block;}
+@media(max-width:560px){.hcover{width:118px;}.hcover img{width:118px;}}
+article{font-size:18px;}
+article h2{font-family:var(--serif);font-size:clamp(1.5rem,1.2rem+1.2vw,1.85rem);margin:3rem 0 1rem;padding-top:2rem;border-top:1px solid var(--line);font-weight:700;letter-spacing:-.01em;line-height:1.3;}
+article h3{font-family:var(--serif);font-size:1.3rem;margin:2rem 0 .6rem;font-weight:700;color:var(--ink);}
+article h4{font-family:var(--serif);font-size:1.12rem;margin:1.4rem 0 .5rem;font-weight:700;color:var(--accent);}
+article p{margin:1.1rem 0;line-height:1.85;color:var(--ink);word-break:keep-all;}
+article ul,article ol{margin:1rem 0;padding-left:1.4rem;}
+article li{margin:.5rem 0;line-height:1.8;word-break:keep-all;}
+article hr{border:none;border-top:1px solid var(--line);margin:2.4rem 0;}
+article blockquote{margin:1.6rem 0;padding:4px 0 4px 24px;border-left:3px solid var(--accent);color:var(--ink);}
+article blockquote p{font-family:var(--serif);font-size:1.2rem;line-height:1.7;margin:.4rem 0;word-break:keep-all;}
+article blockquote.q{border-left-color:#3f6f63;}
+article strong{font-weight:700;}
+article code{background:var(--surface);padding:2px 7px;border-radius:5px;font-size:.9em;}
+.timeline{margin:1.6rem 0;display:flex;flex-direction:column;gap:14px;}
+.sess{display:flex;gap:18px;border:1px solid var(--line);border-radius:16px;background:#fff;padding:18px 20px;box-shadow:0 2px 12px rgba(120,100,60,.05);transition:transform .16s,box-shadow .16s,border-color .16s;}
+.sess.has:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(120,100,60,.12);border-color:#d8cdba;}
+.sess .snum{flex:0 0 50px;text-align:center;padding-top:2px;}
+.sess .snum .n{font-family:var(--serif);font-size:1.7rem;font-weight:700;color:var(--accent);line-height:1;font-variant-numeric:tabular-nums;}
+.sess .snum .b{display:inline-block;margin-top:9px;font-size:11px;font-weight:700;padding:2px 8px;border-radius:12px;white-space:nowrap;letter-spacing:.02em;}
+.sess .snum .b.w{background:var(--wed-soft);color:var(--wed);}
+.sess .snum .b.f{background:var(--fri-soft);color:var(--fri);}
 .sess .sbody{flex:1;min-width:0;}
-.sess .sdate{font-size:.78rem;color:var(--sub);font-weight:700;letter-spacing:.01em;}
-.sess .spart{font-size:1.04rem;font-weight:800;margin:1px 0 6px;color:#33302a;line-height:1.35;}
-.sess .spoint{font-size:.93rem;color:#4a4235;line-height:1.62;}
+.sess .sdate{font-size:13px;color:var(--muted);font-weight:600;letter-spacing:.01em;}
+.sess .spart{font-family:var(--serif);font-size:1.14rem;font-weight:700;margin:3px 0 7px;color:var(--ink);line-height:1.4;word-break:keep-all;}
+.sess .spoint{font-size:15px;color:#4a4235;line-height:1.7;word-break:keep-all;}
 .sess.has{border-color:#e2d3b4;}
-.sess .slink{display:inline-flex;align-items:center;gap:5px;margin-top:11px;font-size:.83rem;font-weight:800;color:var(--gold);text-decoration:none;background:var(--gold-soft);border:1px solid #e7d9bd;padding:6px 13px;border-radius:20px;transition:.15s;}
-.sess .slink:hover{background:var(--gold);color:#fff;border-color:var(--gold);}
-@media(max-width:560px){.sess{gap:12px;padding:13px 14px;}.sess .snum{flex-basis:42px;}.sess .snum .n{font-size:1.25rem;}}
-.tw{overflow-x:auto;margin:1rem 0;}
-article table{border-collapse:collapse;width:100%;font-size:.92rem;}
-article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top;}
-article th{background:var(--gold-soft);font-weight:800;}
-footer{margin-top:48px;padding-top:22px;border-top:1px solid var(--line);text-align:center;font-size:.85rem;color:var(--sub);}
-.priv{margin-top:10px;font-size:.76rem;color:#9a9488;}
-@media(max-width:560px){.hero h1{font-size:1.8rem;}body{font-size:15px;}}
+.sess .slink{display:inline-flex;align-items:center;gap:5px;margin-top:13px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;letter-spacing:.01em;transition:.15s;}
+.sess .slink:hover{color:var(--ink);}
+@media(max-width:560px){.sess{gap:14px;padding:15px 16px;}.sess .snum{flex-basis:42px;}.sess .snum .n{font-size:1.4rem;}}
+.tw{overflow-x:auto;margin:1.4rem 0;}
+article table{border-collapse:collapse;width:100%;font-size:15px;}
+article th,article td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top;}
+article th{background:var(--surface);font-weight:700;}
+footer{margin-top:80px;padding:40px 0 20px;border-top:1px solid var(--line);text-align:center;}
+.foot-mark{font-family:var(--serif);font-size:18px;color:var(--ink);}
+.priv{margin-top:10px;font-size:13px;color:#9a9488;}
+@media(max-width:560px){body{font-size:16px;}article{font-size:16px;}}
 </style></head><body><div class="wrap">
 <div class="top"><a class="back" href="../">← BooKLove 목록</a></div>
 <div class="hero"><div class="eyebrow">BooKLove · 북클럽 정리</div>
-<div class="heroflex"><div class="hcover"><img src="../covers/wisdom.jpg" alt="지혜가 필요한 시간 표지"></div><div class="herotext">
+<div class="hcover"><img src="../covers/wisdom.jpg" alt="지혜가 필요한 시간 표지"></div>
 <h1>지혜가 필요한 시간</h1><div class="author">프랜시스 콜린스</div>
-<div class="chips"><span>📚 10회 (2025-09-17 ~ 2025-10-31, 수요 오전·금요 저녁 병행)</span></div></div></div></div>
+<div class="chips"><span>10회 (2025-09-17 ~ 2025-10-31, 수요 오전·금요 저녁 병행)</span></div></div>
 <article><blockquote><strong>분열과 극단의 시대에 저자는 진리 · 과학 · 신앙 · 신뢰라는 네 기둥을 거쳐 "지혜"로 가는 길을 그렸고, 우리 북클럽은 그 길 끝에서 한 문장에 도달했다 — 우리가 붙든 진리는 관념이 아니라 인격이신 예수 그리스도이시기에, 우리는 이기려고 토론하지 않고 사랑하려고 경청하며, 지혜의 본질은 끝내 사랑이었다. "양분된 세상에 서지 않고 더 큰 진리에 서자"는 것, 그리고 그 진리 앞에 설득의 기술이 아니라 무릎 꿇는 자리에서만 시대와 대화할 수 있다는 것이다.</strong></blockquote>
 <hr>
 <h2>모임 개요</h2>
@@ -72,7 +81,7 @@ footer{margin-top:48px;padding-top:22px;border-top:1px solid var(--line);text-al
 <ul><li><strong>기간</strong>: 2025-09-17 ~ 2025-10-31 (약 6주 · 병행 두 조)</li><li><strong>구조</strong>: 수요 오전조(9/17·10/1·10/15·10/22 종강) + 금요 저녁조(9/26·10/10·10/17·10/24·10/31) 병행 완독</li><li><strong>성격</strong>: 잠언 묵상집이 아니라, 과학자의 신앙 고백을 매개로 한 <strong>"시대와 대화하는 세계관 훈련"</strong></li></ul>
 <hr>
 <h2>흐름</h2>
-<div class="timeline"><div class="sess has"><div class="snum"><div class="n">1</div><span class="b w">🌅 수요</span></div><div class="sbody"><div class="sdate">2025-09-17</div><div class="spart">「지혜가 필요한 시간」 도입 — 양극화 시대와 진리</div><div class="spoint">분열과 극단의 시대, 진리는 이기는 게 아니라 더 큰 진리 안에 함께 서는 것 — 그래서 지금이 지혜가 필요한 시간이다.</div><a class="slink" href="2025-09-17/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">2</div><span class="b f">🌙 금요</span></div><div class="sbody"><div class="sdate">2025-09-26</div><div class="spart">「진리」 나눔 — 토론·환대·인격이신 진리</div><div class="spoint">진리는 붙잡아야 할 문장이 아니라 우리를 먼저 끌어안으신 인격, 그래서 토론의 끝에도 손잡고 함께 기도할 수 있다.</div><a class="slink" href="2025-09-26/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">3</div><span class="b w">🌅 수요</span></div><div class="sbody"><div class="sdate">2025-10-01</div><div class="spart">「과학」 나눔 — 과학 만능주의와 겸손</div><div class="spoint">과학도 겸손 앞에 무릎 꿇을 때, 그 광대한 창조의 경이는 결국 인격이신 진리를 가리킨다.</div><a class="slink" href="2025-10-01/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">4</div><span class="b f">🌙 금요</span></div><div class="sbody"><div class="sdate">2025-10-10</div><div class="spart">「과학」 마무리 — 양극화의 현장과 사랑이라는 진리</div><div class="spoint">모든 과학과 질서의 핵심으로 파고들면 거기 사랑이 있고, 사랑만이 갈라진 세대와 시대를 잇는다.</div><a class="slink" href="2025-10-10/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">5</div><span class="b w">🌅 수요</span></div><div class="sbody"><div class="sdate">2025-10-15</div><div class="spart">「신앙」·「신뢰」 — 진화적 창조론과 세계관</div><div class="spoint">창조와 진화로 오래 다투던 마음들이, 결국 붙잡을 것은 복음이라는 단 하나의 실임을 함께 확인한 밤.</div><a class="slink" href="2025-10-15/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">6</div><span class="b f">🌙 금요</span></div><div class="sbody"><div class="sdate">2025-10-17</div><div class="spart">「신앙」 — 과학과 신앙의 간극을 은혜로 메우다</div><div class="spoint">노력과 보상의 인과율로 설명되지 않는 삶의 간극을, 저마다 '은혜'라 부르며 건너온 이야기들이 흘러넘친 시간.</div><a class="slink" href="2025-10-17/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">7</div><span class="b w">🌅 수요</span></div><div class="sbody"><div class="sdate">2025-10-22</div><div class="spart">완독·종강 — AI 시대와 양극화 속에서 지혜를 찾다</div><div class="spoint">AI가 사람의 쓸모를 흔드는 시대, 결국 지혜는 내 마음과 생각에서 시작된다는 말로 한 권을 덮은 종강.</div><a class="slink" href="2025-10-22/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">8</div><span class="b f">🌙 금요</span></div><div class="sbody"><div class="sdate">2025-10-24</div><div class="spart">「신뢰」 — 정직성·역량·겸손·공유된 가치관</div><div class="spoint">누구도 온전히 믿을 수 없는 시대에, 결국 신뢰할 분은 하나님뿐이며 그 신뢰가 교회에서 풍성히 피어나야 한다는 확인.</div><a class="slink" href="2025-10-24/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">9</div><span class="b f">🌙 금요</span></div><div class="sbody"><div class="sdate">2025-10-31</div><div class="spart">완독 — 희망과 행동·회복, 지혜의 핵심은 사랑</div><div class="spoint">어리석다는 소리를 들어도 세상이 선하게 바뀔 거라는 믿음으로, 갇히지 말고 밖으로 나가 사랑으로 사는 것 — 그것이 이 시대의 지혜다.</div><a class="slink" href="2025-10-31/">이 회차 나눔·카드뉴스 보기 →</a></div></div></div>
+<div class="timeline"><div class="sess has"><div class="snum"><div class="n">1</div><span class="b w">수요</span></div><div class="sbody"><div class="sdate">2025-09-17</div><div class="spart">「지혜가 필요한 시간」 도입 — 양극화 시대와 진리</div><div class="spoint">분열과 극단의 시대, 진리는 이기는 게 아니라 더 큰 진리 안에 함께 서는 것 — 그래서 지금이 지혜가 필요한 시간이다.</div><a class="slink" href="2025-09-17/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">2</div><span class="b f">금요</span></div><div class="sbody"><div class="sdate">2025-09-26</div><div class="spart">「진리」 나눔 — 토론·환대·인격이신 진리</div><div class="spoint">진리는 붙잡아야 할 문장이 아니라 우리를 먼저 끌어안으신 인격, 그래서 토론의 끝에도 손잡고 함께 기도할 수 있다.</div><a class="slink" href="2025-09-26/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">3</div><span class="b w">수요</span></div><div class="sbody"><div class="sdate">2025-10-01</div><div class="spart">「과학」 나눔 — 과학 만능주의와 겸손</div><div class="spoint">과학도 겸손 앞에 무릎 꿇을 때, 그 광대한 창조의 경이는 결국 인격이신 진리를 가리킨다.</div><a class="slink" href="2025-10-01/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">4</div><span class="b f">금요</span></div><div class="sbody"><div class="sdate">2025-10-10</div><div class="spart">「과학」 마무리 — 양극화의 현장과 사랑이라는 진리</div><div class="spoint">모든 과학과 질서의 핵심으로 파고들면 거기 사랑이 있고, 사랑만이 갈라진 세대와 시대를 잇는다.</div><a class="slink" href="2025-10-10/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">5</div><span class="b w">수요</span></div><div class="sbody"><div class="sdate">2025-10-15</div><div class="spart">「신앙」·「신뢰」 — 진화적 창조론과 세계관</div><div class="spoint">창조와 진화로 오래 다투던 마음들이, 결국 붙잡을 것은 복음이라는 단 하나의 실임을 함께 확인한 밤.</div><a class="slink" href="2025-10-15/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">6</div><span class="b f">금요</span></div><div class="sbody"><div class="sdate">2025-10-17</div><div class="spart">「신앙」 — 과학과 신앙의 간극을 은혜로 메우다</div><div class="spoint">노력과 보상의 인과율로 설명되지 않는 삶의 간극을, 저마다 '은혜'라 부르며 건너온 이야기들이 흘러넘친 시간.</div><a class="slink" href="2025-10-17/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">7</div><span class="b w">수요</span></div><div class="sbody"><div class="sdate">2025-10-22</div><div class="spart">완독·종강 — AI 시대와 양극화 속에서 지혜를 찾다</div><div class="spoint">AI가 사람의 쓸모를 흔드는 시대, 결국 지혜는 내 마음과 생각에서 시작된다는 말로 한 권을 덮은 종강.</div><a class="slink" href="2025-10-22/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">8</div><span class="b f">금요</span></div><div class="sbody"><div class="sdate">2025-10-24</div><div class="spart">「신뢰」 — 정직성·역량·겸손·공유된 가치관</div><div class="spoint">누구도 온전히 믿을 수 없는 시대에, 결국 신뢰할 분은 하나님뿐이며 그 신뢰가 교회에서 풍성히 피어나야 한다는 확인.</div><a class="slink" href="2025-10-24/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">9</div><span class="b f">금요</span></div><div class="sbody"><div class="sdate">2025-10-31</div><div class="spart">완독 — 희망과 행동·회복, 지혜의 핵심은 사랑</div><div class="spoint">어리석다는 소리를 들어도 세상이 선하게 바뀔 거라는 믿음으로, 갇히지 말고 밖으로 나가 사랑으로 사는 것 — 그것이 이 시대의 지혜다.</div><a class="slink" href="2025-10-31/">이 회차 나눔·카드뉴스 보기 →</a></div></div></div>
 <h2>책을 관통한 핵심 주제</h2>
 <h3>1. 진영의 선 밖으로 — 양극화 시대에 "더 큰 진리"에 서기</h3>
 <p>책의 출발점이자 북클럽 전체의 문제의식이다. 저자는 진보/보수 어느 진영도 진리 자체가 아니며, <strong>"우리가 그어 놓은 우리/그들의 선, 그 선이 이미 거짓과 불의의 선"</strong>이라고 말한다. 예수는 그 선 밖으로 우리를 부르셨다("진보도 보수도 아니고 진리"). 진행자는 이 시대를 포스트모던으로 진단했다 — 한때 진리가 상수(常數)였는데, 이제 "내가 좋으면 좋은 것"이 되며 각자가 텍스트요 주체가 되었다는 것(데카르트의 "나는 생각한다"에서 유명론·경험주의를 거쳐 데리다의 해체까지). 그 결과 "세계관이 너무 갈라져서 두 영역이 대화조차 못 한다."</p>
@@ -127,5 +136,7 @@ footer{margin-top:48px;padding-top:22px;border-top:1px solid var(--line);text-al
 <p>양극화 · 진리 · 일반계시 · 특별계시 · 진화적 창조론 · 과학과 신앙 · 신뢰 · 지혜 · 정신적 역병 · 세계관</p>
 <p><strong>인물·자료</strong></p>
 <p>프랜시스 콜린스 · 팀 켈러 · C.S. 루이스 · 마틴 로이드 존스 · N.T. 라이트 · 존 폴킨혼 · 제임스 K.A. 스미스 · 리 스트로벨 · 우종학</p></article>
-<footer>제작 · 안나간성도<div class="priv">이 페이지는 검색에 노출되지 않으며, 링크를 아는 분만 열람할 수 있습니다.</div></footer>
+<footer><div class="foot-mark">BooKLove</div>
+<div class="priv">제작 · 안나간성도</div>
+<div class="priv">이 페이지는 검색에 노출되지 않으며, 링크를 아는 분만 열람할 수 있습니다.</div></footer>
 </div></body></html>

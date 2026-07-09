@@ -2,72 +2,81 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
 <title>시간 안에서 사는 법 · BooKLove</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.2/NanumMyeongjo.css">
 <style>
-:root{--ink:#232019;--sub:#6b6357;--line:#e7e1d6;--paper:#faf7f1;--gold:#a9803f;--gold-soft:#f3ead9;--card:#fffdf9;--brown:#2a2018;}
-*{box-sizing:border-box;} html{scroll-behavior:smooth;}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.75;font-size:16px;letter-spacing:-.01em;-webkit-font-smoothing:antialiased;}
-.wrap{max-width:820px;margin:0 auto;padding:0 22px 90px;}
+:root{--bg:#FBF9F4;--surface:#F3EEE4;--ink:#23201B;--muted:#6B6459;--accent:#9A3B2E;--line:#E3DCCF;
+--wed:#3f6f63;--wed-soft:#e7f0ec;--fri:#8a6d1f;--fri-soft:#f4eeda;
+--serif:'Nanum Myeongjo',Georgia,'Apple SD Gothic Neo',serif;
+--sans:'Pretendard','Apple SD Gothic Neo','맑은 고딕',system-ui,sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0;} html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.8;font-size:18px;
+letter-spacing:-.003em;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+img{max-width:100%;height:auto;display:block;}
+.wrap{max-width:680px;margin:0 auto;padding:0 24px 100px;}
 a{color:inherit;}
 
-.top{padding:26px 0 0;}
-.back{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;color:var(--sub);text-decoration:none;border:1px solid var(--line);background:#fff;padding:6px 14px;border-radius:20px;}
-.back:hover{color:var(--gold);border-color:var(--gold);}
-.hero{padding:30px 0 26px;border-bottom:2px solid var(--ink);margin-bottom:10px;}
-.hero .eyebrow{font-size:.76rem;letter-spacing:.22em;color:var(--gold);font-weight:800;text-transform:uppercase;}
-.hero h1{font-size:2.3rem;line-height:1.2;margin:.4rem 0 .3rem;font-weight:800;letter-spacing:-.02em;text-wrap:balance;}
-.hero .author{font-size:1.02rem;color:#3f3a30;}
-.hero .chips{display:flex;flex-wrap:wrap;gap:6px 8px;margin-top:16px;}
-.hero .chips span{background:#fff;border:1px solid var(--line);border-radius:20px;padding:4px 13px;font-size:.82rem;color:var(--sub);}
-.heroflex{display:flex;gap:24px;align-items:flex-start;}
-.hcover{flex:0 0 138px;}
-.hcover img{width:138px;height:auto;border-radius:8px;box-shadow:0 8px 24px rgba(80,60,30,.20);display:block;}
-.herotext{flex:1;min-width:0;}
-@media(max-width:560px){.heroflex{gap:16px;}.hcover{flex:0 0 100px;}.hcover img{width:100px;}.herotext h1{font-size:1.7rem;}}
-article{font-size:1.02rem;}
-article h2{font-size:1.4rem;margin:2.2rem 0 .7rem;padding-top:1.2rem;border-top:1px solid var(--line);font-weight:800;letter-spacing:-.01em;}
-article h3{font-size:1.12rem;margin:1.5rem 0 .5rem;font-weight:800;color:#33302a;}
-article h4{font-size:1rem;margin:1.1rem 0 .4rem;font-weight:800;color:var(--gold);}
-article p{margin:.7rem 0;}
-article ul,article ol{margin:.6rem 0;padding-left:1.3rem;}
-article li{margin:.3rem 0;}
-article hr{border:none;border-top:1px solid var(--line);margin:1.6rem 0;}
-article blockquote{margin:1rem 0;padding:14px 20px;background:var(--gold-soft);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;color:#4a4235;}
-article blockquote.q{background:#fff;border-left-color:var(--gold);font-size:1.04rem;}
-article strong{font-weight:800;}
-article code{background:#f1ece2;padding:1px 6px;border-radius:5px;font-size:.9em;}
-.timeline{margin:1.3rem 0;display:flex;flex-direction:column;gap:12px;}
-.sess{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;background:#fff;padding:15px 18px;box-shadow:0 1px 8px rgba(120,100,60,.04);}
-.sess .snum{flex:0 0 52px;text-align:center;padding-top:2px;}
-.sess .snum .n{font-size:1.5rem;font-weight:800;color:var(--gold);line-height:1;font-variant-numeric:tabular-nums;}
-.sess .snum .b{display:inline-block;margin-top:8px;font-size:.6rem;font-weight:800;padding:2px 6px;border-radius:10px;white-space:nowrap;}
-.sess .snum .b.w{background:#e6f1ef;color:#2f6f6a;}
-.sess .snum .b.f{background:#f4eeda;color:#8a6d1f;}
+.top{padding:24px 0 0;}
+.back{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--muted);text-decoration:none;letter-spacing:.01em;}
+.back:hover{color:var(--accent);}
+.hero{padding:44px 0 30px;border-bottom:1px solid var(--line);margin-bottom:14px;text-align:center;}
+.hero .eyebrow{font-size:12px;letter-spacing:.26em;color:var(--accent);font-weight:700;text-transform:uppercase;}
+.hero h1{font-family:var(--serif);font-size:clamp(2rem,1.5rem+2.5vw,3rem);line-height:1.2;margin:16px 0 8px;font-weight:700;letter-spacing:-.01em;word-break:keep-all;text-wrap:balance;}
+.hero .author{font-size:16px;color:var(--muted);}
+.hero .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:20px;}
+.hero .chips span{background:#fff;border:1px solid var(--line);border-radius:22px;padding:5px 15px;font-size:13px;color:var(--muted);font-weight:600;}
+.hcover{margin:0 auto 24px;width:150px;}
+.hcover img{width:150px;height:auto;border-radius:6px;box-shadow:0 12px 30px rgba(80,60,30,.20);display:block;}
+@media(max-width:560px){.hcover{width:118px;}.hcover img{width:118px;}}
+article{font-size:18px;}
+article h2{font-family:var(--serif);font-size:clamp(1.5rem,1.2rem+1.2vw,1.85rem);margin:3rem 0 1rem;padding-top:2rem;border-top:1px solid var(--line);font-weight:700;letter-spacing:-.01em;line-height:1.3;}
+article h3{font-family:var(--serif);font-size:1.3rem;margin:2rem 0 .6rem;font-weight:700;color:var(--ink);}
+article h4{font-family:var(--serif);font-size:1.12rem;margin:1.4rem 0 .5rem;font-weight:700;color:var(--accent);}
+article p{margin:1.1rem 0;line-height:1.85;color:var(--ink);word-break:keep-all;}
+article ul,article ol{margin:1rem 0;padding-left:1.4rem;}
+article li{margin:.5rem 0;line-height:1.8;word-break:keep-all;}
+article hr{border:none;border-top:1px solid var(--line);margin:2.4rem 0;}
+article blockquote{margin:1.6rem 0;padding:4px 0 4px 24px;border-left:3px solid var(--accent);color:var(--ink);}
+article blockquote p{font-family:var(--serif);font-size:1.2rem;line-height:1.7;margin:.4rem 0;word-break:keep-all;}
+article blockquote.q{border-left-color:#3f6f63;}
+article strong{font-weight:700;}
+article code{background:var(--surface);padding:2px 7px;border-radius:5px;font-size:.9em;}
+.timeline{margin:1.6rem 0;display:flex;flex-direction:column;gap:14px;}
+.sess{display:flex;gap:18px;border:1px solid var(--line);border-radius:16px;background:#fff;padding:18px 20px;box-shadow:0 2px 12px rgba(120,100,60,.05);transition:transform .16s,box-shadow .16s,border-color .16s;}
+.sess.has:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(120,100,60,.12);border-color:#d8cdba;}
+.sess .snum{flex:0 0 50px;text-align:center;padding-top:2px;}
+.sess .snum .n{font-family:var(--serif);font-size:1.7rem;font-weight:700;color:var(--accent);line-height:1;font-variant-numeric:tabular-nums;}
+.sess .snum .b{display:inline-block;margin-top:9px;font-size:11px;font-weight:700;padding:2px 8px;border-radius:12px;white-space:nowrap;letter-spacing:.02em;}
+.sess .snum .b.w{background:var(--wed-soft);color:var(--wed);}
+.sess .snum .b.f{background:var(--fri-soft);color:var(--fri);}
 .sess .sbody{flex:1;min-width:0;}
-.sess .sdate{font-size:.78rem;color:var(--sub);font-weight:700;letter-spacing:.01em;}
-.sess .spart{font-size:1.04rem;font-weight:800;margin:1px 0 6px;color:#33302a;line-height:1.35;}
-.sess .spoint{font-size:.93rem;color:#4a4235;line-height:1.62;}
+.sess .sdate{font-size:13px;color:var(--muted);font-weight:600;letter-spacing:.01em;}
+.sess .spart{font-family:var(--serif);font-size:1.14rem;font-weight:700;margin:3px 0 7px;color:var(--ink);line-height:1.4;word-break:keep-all;}
+.sess .spoint{font-size:15px;color:#4a4235;line-height:1.7;word-break:keep-all;}
 .sess.has{border-color:#e2d3b4;}
-.sess .slink{display:inline-flex;align-items:center;gap:5px;margin-top:11px;font-size:.83rem;font-weight:800;color:var(--gold);text-decoration:none;background:var(--gold-soft);border:1px solid #e7d9bd;padding:6px 13px;border-radius:20px;transition:.15s;}
-.sess .slink:hover{background:var(--gold);color:#fff;border-color:var(--gold);}
-@media(max-width:560px){.sess{gap:12px;padding:13px 14px;}.sess .snum{flex-basis:42px;}.sess .snum .n{font-size:1.25rem;}}
-.tw{overflow-x:auto;margin:1rem 0;}
-article table{border-collapse:collapse;width:100%;font-size:.92rem;}
-article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top;}
-article th{background:var(--gold-soft);font-weight:800;}
-footer{margin-top:48px;padding-top:22px;border-top:1px solid var(--line);text-align:center;font-size:.85rem;color:var(--sub);}
-.priv{margin-top:10px;font-size:.76rem;color:#9a9488;}
-@media(max-width:560px){.hero h1{font-size:1.8rem;}body{font-size:15px;}}
+.sess .slink{display:inline-flex;align-items:center;gap:5px;margin-top:13px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;letter-spacing:.01em;transition:.15s;}
+.sess .slink:hover{color:var(--ink);}
+@media(max-width:560px){.sess{gap:14px;padding:15px 16px;}.sess .snum{flex-basis:42px;}.sess .snum .n{font-size:1.4rem;}}
+.tw{overflow-x:auto;margin:1.4rem 0;}
+article table{border-collapse:collapse;width:100%;font-size:15px;}
+article th,article td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top;}
+article th{background:var(--surface);font-weight:700;}
+footer{margin-top:80px;padding:40px 0 20px;border-top:1px solid var(--line);text-align:center;}
+.foot-mark{font-family:var(--serif);font-size:18px;color:var(--ink);}
+.priv{margin-top:10px;font-size:13px;color:#9a9488;}
+@media(max-width:560px){body{font-size:16px;}article{font-size:16px;}}
 </style></head><body><div class="wrap">
 <div class="top"><a class="back" href="../">← BooKLove 목록</a></div>
 <div class="hero"><div class="eyebrow">BooKLove · 북클럽 정리</div>
-<div class="heroflex"><div class="hcover"><img src="../covers/time.jpg" alt="시간 안에서 사는 법 표지"></div><div class="herotext">
+<div class="hcover"><img src="../covers/time.jpg" alt="시간 안에서 사는 법 표지"></div>
 <h1>시간 안에서 사는 법</h1><div class="author">제임스 K.A. 스미스</div>
-<div class="chips"><span>📚 2회 (2024-10-30 ~ 2024-11-13, 수요 오전)</span></div></div></div></div>
+<div class="chips"><span>2회 (2024-10-30 ~ 2024-11-13, 수요 오전)</span></div></div>
 <article><blockquote><strong>"시간 관리법을 배우려 펼쳤다가, 시간을 관리하려는 나 자신이 부서졌다."</strong> — 제임스 K.A. 스미스는 시간을 '쪼개 통제할 자원'이 아니라 '하나님이 우리를 빚어가시는 은혜의 장(場)'으로 다시 그린다. 과거는 믿음으로, 미래는 소망으로 주님께 맡길 때, 지금 남는 우리의 일은 오직 사랑뿐이다.</blockquote>
 <h2>모임 개요</h2>
 <p>제임스 K.A. 스미스(James K.A. Smith)의 『How to Inhabit Time』(국내 소개서, 본문 표지 문구 "과거를 이해하고 미래를 바라보며 지금 충실하게 살아가기")을 수요 오전조가 2회에 걸쳐 함께 읽었다. 스미스는 『습관이 영성이다(You Are What You Love)』·『하나님 나라를 욕망하라』로 알려진 개혁주의 철학자로, 진행자가 "제임스 스미스를 좋아한다"며 예전(禮典, liturgy)을 함께 공부하려는 흐름에서 골라온 책이다. 참석자 대부분이 "이렇게까지 묵상하게 만드는 책은 오랜만"이라 입을 모을 만큼 어렵다고 느꼈지만, 바로 그 어려움 때문에 시간을 처음으로 진지하게 사유하게 되었다는 반응이 많았다. 첫 모임은 서문·도입부, 둘째 모임은 크로노스/카이로스·수치와 은총·시간의 상대성까지 나아갔다.</p>
 <h2>흐름</h2>
-<div class="timeline"><div class="sess has"><div class="snum"><div class="n">1</div><span class="b w">🌅 수요</span></div><div class="sbody"><div class="sdate">2024-10-30</div><div class="spart">「시간 안에서 사는 법」 서문·도입 — 씨줄과 날줄, 시간을 빚으시는 하나님</div><div class="spoint">매일의 풍랑 같은 시간을 견디다가도, 가끔 드론을 띄워 보면 하나님이 내 인생 전체를 하나의 작품으로 빚고 계셨다.</div><a class="slink" href="2024-10-30/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">2</div><span class="b w">🌅 수요</span></div><div class="sbody"><div class="sdate">2024-11-13</div><div class="spart">수치와 은총·크로노스와 카이로스 — 과거를 사용하시는 하나님</div><div class="spoint">부끄러운 과거조차 하나님은 버리지 않으시고, 은총으로 다시 새겨 오늘을 살아갈 뿌리로 삼으신다.</div><a class="slink" href="2024-11-13/">이 회차 나눔·카드뉴스 보기 →</a></div></div></div>
+<div class="timeline"><div class="sess has"><div class="snum"><div class="n">1</div><span class="b w">수요</span></div><div class="sbody"><div class="sdate">2024-10-30</div><div class="spart">「시간 안에서 사는 법」 서문·도입 — 씨줄과 날줄, 시간을 빚으시는 하나님</div><div class="spoint">매일의 풍랑 같은 시간을 견디다가도, 가끔 드론을 띄워 보면 하나님이 내 인생 전체를 하나의 작품으로 빚고 계셨다.</div><a class="slink" href="2024-10-30/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">2</div><span class="b w">수요</span></div><div class="sbody"><div class="sdate">2024-11-13</div><div class="spart">수치와 은총·크로노스와 카이로스 — 과거를 사용하시는 하나님</div><div class="spoint">부끄러운 과거조차 하나님은 버리지 않으시고, 은총으로 다시 새겨 오늘을 살아갈 뿌리로 삼으신다.</div><a class="slink" href="2024-11-13/">이 회차 나눔·카드뉴스 보기 →</a></div></div></div>
 <h2>책을 관통한 핵심 주제</h2>
 <h3>1. 시간을 관리하려는 자아가 부서지는 자리</h3>
 <p>참석자들은 "시간을 쪼개 밀도 있게 사는 법"을 기대하며 책을 폈다가, 그 기대를 산산조각 내는 첫 문장에 당황했다. 한 참석자는 "작가의 의도는 알겠는데 왜 굳이 이런 철학적 언어로 썼을까 하는 벽에 먼저 부딪혀 내용이 눈에 안 들어왔다"고 했다. 진행자는 이를 '불친절한 책'이라 부르며 "우리한테 맞춰 쓴 게 아니라 자기 속도로 썼다 — 마음에 들면 네가 맞추든가 나가든가 하는 애플 같은 스타일"이라 표현했고, 곧이어 이것이 도리어 성경·복음의 방식이라 뒤집었다. "복음은 안 팔리는 물건을 억지로 파는 게 아니다. 다만 성경과 달리, 주님은 우리에게 맞추실 수 있기에 낮아져 우리에게 오셨다." 시간 앞에서 통제권을 내려놓는 훈련이 곧 책 읽기의 첫 관문이 되었다.</p>
@@ -99,5 +108,7 @@ footer{margin-top:48px;padding-top:22px;border-top:1px solid var(--line);text-al
 <ol><li>나는 시간을 '통제할 자원'으로 쥐고 있는가, 하나님이 나를 빚으시는 은혜의 장으로 내어드리고 있는가?</li><li>지금 내가 잘라내 버리고 싶은 '골짜기의 시간'은 무엇인가? 드론을 띄워 조망한다면 하나님은 거기서 무엇을 새기고 계실까?</li><li>나의 과거를 나는 수치로 후회하는가, 향수로 왜곡하는가, 아니면 은총으로 회복하는가?</li><li>내 기억은 어디서 '탈문맥화'되어 있는가 — 상처받은 것만 기억하고 내가 상처 준 것은 잊은 관계는 없는가?</li><li>이번 한 주, 내 삶에서 제거해야 할 '바쁨'은 무엇이며, 어디서 멈춤(안식)으로 신앙의 0점을 조준할 것인가?</li></ol>
 <h2>연결</h2>
 <ul><li>순전한 기독교 북클럽 — 14회 종합(2025.10~12)</li><li>불안세대 북클럽</li><li>습관이 영성이다 — 제임스 스미스, "네가 사랑하는 것이 곧 너다"</li><li>크로노스와 카이로스</li><li>안식일 · 예전(禮典)</li><li>하이데거 — 던져진 인생(피투와 기투)</li><li>제임스 K.A. 스미스</li><li>슬로우 영성 — 바쁨의 제거</li></ul></article>
-<footer>제작 · 안나간성도<div class="priv">이 페이지는 검색에 노출되지 않으며, 링크를 아는 분만 열람할 수 있습니다.</div></footer>
+<footer><div class="foot-mark">BooKLove</div>
+<div class="priv">제작 · 안나간성도</div>
+<div class="priv">이 페이지는 검색에 노출되지 않으며, 링크를 아는 분만 열람할 수 있습니다.</div></footer>
 </div></body></html>

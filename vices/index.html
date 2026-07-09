@@ -2,73 +2,82 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
 <title>매혹적인 악덕들 · BooKLove</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.2/NanumMyeongjo.css">
 <style>
-:root{--ink:#232019;--sub:#6b6357;--line:#e7e1d6;--paper:#faf7f1;--gold:#a9803f;--gold-soft:#f3ead9;--card:#fffdf9;--brown:#2a2018;}
-*{box-sizing:border-box;} html{scroll-behavior:smooth;}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.75;font-size:16px;letter-spacing:-.01em;-webkit-font-smoothing:antialiased;}
-.wrap{max-width:820px;margin:0 auto;padding:0 22px 90px;}
+:root{--bg:#FBF9F4;--surface:#F3EEE4;--ink:#23201B;--muted:#6B6459;--accent:#9A3B2E;--line:#E3DCCF;
+--wed:#3f6f63;--wed-soft:#e7f0ec;--fri:#8a6d1f;--fri-soft:#f4eeda;
+--serif:'Nanum Myeongjo',Georgia,'Apple SD Gothic Neo',serif;
+--sans:'Pretendard','Apple SD Gothic Neo','맑은 고딕',system-ui,sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0;} html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.8;font-size:18px;
+letter-spacing:-.003em;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+img{max-width:100%;height:auto;display:block;}
+.wrap{max-width:680px;margin:0 auto;padding:0 24px 100px;}
 a{color:inherit;}
 
-.top{padding:26px 0 0;}
-.back{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;color:var(--sub);text-decoration:none;border:1px solid var(--line);background:#fff;padding:6px 14px;border-radius:20px;}
-.back:hover{color:var(--gold);border-color:var(--gold);}
-.hero{padding:30px 0 26px;border-bottom:2px solid var(--ink);margin-bottom:10px;}
-.hero .eyebrow{font-size:.76rem;letter-spacing:.22em;color:var(--gold);font-weight:800;text-transform:uppercase;}
-.hero h1{font-size:2.3rem;line-height:1.2;margin:.4rem 0 .3rem;font-weight:800;letter-spacing:-.02em;text-wrap:balance;}
-.hero .author{font-size:1.02rem;color:#3f3a30;}
-.hero .chips{display:flex;flex-wrap:wrap;gap:6px 8px;margin-top:16px;}
-.hero .chips span{background:#fff;border:1px solid var(--line);border-radius:20px;padding:4px 13px;font-size:.82rem;color:var(--sub);}
-.heroflex{display:flex;gap:24px;align-items:flex-start;}
-.hcover{flex:0 0 138px;}
-.hcover img{width:138px;height:auto;border-radius:8px;box-shadow:0 8px 24px rgba(80,60,30,.20);display:block;}
-.herotext{flex:1;min-width:0;}
-@media(max-width:560px){.heroflex{gap:16px;}.hcover{flex:0 0 100px;}.hcover img{width:100px;}.herotext h1{font-size:1.7rem;}}
-article{font-size:1.02rem;}
-article h2{font-size:1.4rem;margin:2.2rem 0 .7rem;padding-top:1.2rem;border-top:1px solid var(--line);font-weight:800;letter-spacing:-.01em;}
-article h3{font-size:1.12rem;margin:1.5rem 0 .5rem;font-weight:800;color:#33302a;}
-article h4{font-size:1rem;margin:1.1rem 0 .4rem;font-weight:800;color:var(--gold);}
-article p{margin:.7rem 0;}
-article ul,article ol{margin:.6rem 0;padding-left:1.3rem;}
-article li{margin:.3rem 0;}
-article hr{border:none;border-top:1px solid var(--line);margin:1.6rem 0;}
-article blockquote{margin:1rem 0;padding:14px 20px;background:var(--gold-soft);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;color:#4a4235;}
-article blockquote.q{background:#fff;border-left-color:var(--gold);font-size:1.04rem;}
-article strong{font-weight:800;}
-article code{background:#f1ece2;padding:1px 6px;border-radius:5px;font-size:.9em;}
-.timeline{margin:1.3rem 0;display:flex;flex-direction:column;gap:12px;}
-.sess{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;background:#fff;padding:15px 18px;box-shadow:0 1px 8px rgba(120,100,60,.04);}
-.sess .snum{flex:0 0 52px;text-align:center;padding-top:2px;}
-.sess .snum .n{font-size:1.5rem;font-weight:800;color:var(--gold);line-height:1;font-variant-numeric:tabular-nums;}
-.sess .snum .b{display:inline-block;margin-top:8px;font-size:.6rem;font-weight:800;padding:2px 6px;border-radius:10px;white-space:nowrap;}
-.sess .snum .b.w{background:#e6f1ef;color:#2f6f6a;}
-.sess .snum .b.f{background:#f4eeda;color:#8a6d1f;}
+.top{padding:24px 0 0;}
+.back{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--muted);text-decoration:none;letter-spacing:.01em;}
+.back:hover{color:var(--accent);}
+.hero{padding:44px 0 30px;border-bottom:1px solid var(--line);margin-bottom:14px;text-align:center;}
+.hero .eyebrow{font-size:12px;letter-spacing:.26em;color:var(--accent);font-weight:700;text-transform:uppercase;}
+.hero h1{font-family:var(--serif);font-size:clamp(2rem,1.5rem+2.5vw,3rem);line-height:1.2;margin:16px 0 8px;font-weight:700;letter-spacing:-.01em;word-break:keep-all;text-wrap:balance;}
+.hero .author{font-size:16px;color:var(--muted);}
+.hero .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:20px;}
+.hero .chips span{background:#fff;border:1px solid var(--line);border-radius:22px;padding:5px 15px;font-size:13px;color:var(--muted);font-weight:600;}
+.hcover{margin:0 auto 24px;width:150px;}
+.hcover img{width:150px;height:auto;border-radius:6px;box-shadow:0 12px 30px rgba(80,60,30,.20);display:block;}
+@media(max-width:560px){.hcover{width:118px;}.hcover img{width:118px;}}
+article{font-size:18px;}
+article h2{font-family:var(--serif);font-size:clamp(1.5rem,1.2rem+1.2vw,1.85rem);margin:3rem 0 1rem;padding-top:2rem;border-top:1px solid var(--line);font-weight:700;letter-spacing:-.01em;line-height:1.3;}
+article h3{font-family:var(--serif);font-size:1.3rem;margin:2rem 0 .6rem;font-weight:700;color:var(--ink);}
+article h4{font-family:var(--serif);font-size:1.12rem;margin:1.4rem 0 .5rem;font-weight:700;color:var(--accent);}
+article p{margin:1.1rem 0;line-height:1.85;color:var(--ink);word-break:keep-all;}
+article ul,article ol{margin:1rem 0;padding-left:1.4rem;}
+article li{margin:.5rem 0;line-height:1.8;word-break:keep-all;}
+article hr{border:none;border-top:1px solid var(--line);margin:2.4rem 0;}
+article blockquote{margin:1.6rem 0;padding:4px 0 4px 24px;border-left:3px solid var(--accent);color:var(--ink);}
+article blockquote p{font-family:var(--serif);font-size:1.2rem;line-height:1.7;margin:.4rem 0;word-break:keep-all;}
+article blockquote.q{border-left-color:#3f6f63;}
+article strong{font-weight:700;}
+article code{background:var(--surface);padding:2px 7px;border-radius:5px;font-size:.9em;}
+.timeline{margin:1.6rem 0;display:flex;flex-direction:column;gap:14px;}
+.sess{display:flex;gap:18px;border:1px solid var(--line);border-radius:16px;background:#fff;padding:18px 20px;box-shadow:0 2px 12px rgba(120,100,60,.05);transition:transform .16s,box-shadow .16s,border-color .16s;}
+.sess.has:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(120,100,60,.12);border-color:#d8cdba;}
+.sess .snum{flex:0 0 50px;text-align:center;padding-top:2px;}
+.sess .snum .n{font-family:var(--serif);font-size:1.7rem;font-weight:700;color:var(--accent);line-height:1;font-variant-numeric:tabular-nums;}
+.sess .snum .b{display:inline-block;margin-top:9px;font-size:11px;font-weight:700;padding:2px 8px;border-radius:12px;white-space:nowrap;letter-spacing:.02em;}
+.sess .snum .b.w{background:var(--wed-soft);color:var(--wed);}
+.sess .snum .b.f{background:var(--fri-soft);color:var(--fri);}
 .sess .sbody{flex:1;min-width:0;}
-.sess .sdate{font-size:.78rem;color:var(--sub);font-weight:700;letter-spacing:.01em;}
-.sess .spart{font-size:1.04rem;font-weight:800;margin:1px 0 6px;color:#33302a;line-height:1.35;}
-.sess .spoint{font-size:.93rem;color:#4a4235;line-height:1.62;}
+.sess .sdate{font-size:13px;color:var(--muted);font-weight:600;letter-spacing:.01em;}
+.sess .spart{font-family:var(--serif);font-size:1.14rem;font-weight:700;margin:3px 0 7px;color:var(--ink);line-height:1.4;word-break:keep-all;}
+.sess .spoint{font-size:15px;color:#4a4235;line-height:1.7;word-break:keep-all;}
 .sess.has{border-color:#e2d3b4;}
-.sess .slink{display:inline-flex;align-items:center;gap:5px;margin-top:11px;font-size:.83rem;font-weight:800;color:var(--gold);text-decoration:none;background:var(--gold-soft);border:1px solid #e7d9bd;padding:6px 13px;border-radius:20px;transition:.15s;}
-.sess .slink:hover{background:var(--gold);color:#fff;border-color:var(--gold);}
-@media(max-width:560px){.sess{gap:12px;padding:13px 14px;}.sess .snum{flex-basis:42px;}.sess .snum .n{font-size:1.25rem;}}
-.tw{overflow-x:auto;margin:1rem 0;}
-article table{border-collapse:collapse;width:100%;font-size:.92rem;}
-article th,article td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top;}
-article th{background:var(--gold-soft);font-weight:800;}
-footer{margin-top:48px;padding-top:22px;border-top:1px solid var(--line);text-align:center;font-size:.85rem;color:var(--sub);}
-.priv{margin-top:10px;font-size:.76rem;color:#9a9488;}
-@media(max-width:560px){.hero h1{font-size:1.8rem;}body{font-size:15px;}}
+.sess .slink{display:inline-flex;align-items:center;gap:5px;margin-top:13px;font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;letter-spacing:.01em;transition:.15s;}
+.sess .slink:hover{color:var(--ink);}
+@media(max-width:560px){.sess{gap:14px;padding:15px 16px;}.sess .snum{flex-basis:42px;}.sess .snum .n{font-size:1.4rem;}}
+.tw{overflow-x:auto;margin:1.4rem 0;}
+article table{border-collapse:collapse;width:100%;font-size:15px;}
+article th,article td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top;}
+article th{background:var(--surface);font-weight:700;}
+footer{margin-top:80px;padding:40px 0 20px;border-top:1px solid var(--line);text-align:center;}
+.foot-mark{font-family:var(--serif);font-size:18px;color:var(--ink);}
+.priv{margin-top:10px;font-size:13px;color:#9a9488;}
+@media(max-width:560px){body{font-size:16px;}article{font-size:16px;}}
 </style></head><body><div class="wrap">
 <div class="top"><a class="back" href="../">← BooKLove 목록</a></div>
 <div class="hero"><div class="eyebrow">BooKLove · 북클럽 정리</div>
-<div class="heroflex"><div class="hcover"><img src="../covers/vices.jpg" alt="매혹적인 악덕들 표지"></div><div class="herotext">
+<div class="hcover"><img src="../covers/vices.jpg" alt="매혹적인 악덕들 표지"></div>
 <h1>매혹적인 악덕들</h1><div class="author">리베카 드영</div>
-<div class="chips"><span>📚 8회 (2025-04-23 ~ 2025-08-27, 수요 오전)</span></div></div></div></div>
+<div class="chips"><span>8회 (2025-04-23 ~ 2025-08-27, 수요 오전)</span></div></div>
 <article><blockquote><strong>"이 책은 다 읽고 구석에 던져놓고 싶은 거슬리는 책이다. 그런데 이렇게 나를 돌아볼 수 있다는 것 자체가 이미 성령이 우리 안에 계신다는 증거 — 칠죄종이라는 거울 앞에서 안 걸리는 사람은 없고, 그 거울을 깨거나 갖다 버리는 대신 무릎 꿇는 자리에 은혜가 있다."</strong></blockquote>
 <h2>모임 개요</h2>
 <p>수요 오전조가 4월부터 8월까지 리베카 드영의 『매혹적인 악덕들(영문 제목 <em>Glittering Vices</em> — 진행자 표현으로 "반짝반짝 빛나는 악덕들")』을 8회에 걸쳐 완독했다. 두꺼운 책을 한 번에 다루지 않고 <strong>칠죄종(七罪宗)을 한 장씩 끊어 읽으며 각 악덕의 정의·뿌리·해독제(덕)·영성훈련을 나누는 방식</strong>으로 진행했다("한 개를 몰입해서 읽어야 대화가 풍성해진다. 너무 많이 읽으면 뇌가 쪼개진다").</p>
 <p>이 책의 성격은 교리 강의가 아니라 <strong>자기 진단서</strong>였다. 참석자들은 매 장마다 "이거 다 내 얘기"라며 웃었고, "안 걸리는 얘기가 하나도 없다"는 죄인 인식이 회를 거듭할수록 깊어졌다. 책이 각 악덕의 뒤에 <strong>처방전(해독제·영성훈련)</strong>을 붙여둔다는 점, 그리고 그 훈련이 개인의 결심을 넘어 <strong>공동체적 노력</strong>을 요구한다는 점이 반복해서 강조되었다. 종강 회차에서는 책이 권한 <strong>금식</strong>을 실제로 각자 실천하고 그 경험을 나누며 마무리했다.</p>
 <h2>흐름</h2>
-<div class="timeline"><div class="sess has"><div class="snum"><div class="n">1</div><span class="b w">🌅 수요</span></div><div class="sbody"><div class="sdate">2025-04-23</div><div class="spart">교만과 허영 — 목표가 나인가 하늘인가</div><div class="spoint">촘촘한 그물 같은 허영과 교만에 걸리지 않을 사람이 없다 — 다만 영광을 사랑하는 자는 그 자리를 즉시 떠난다.</div><a class="slink" href="2025-04-23/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">2</div><span class="b w">🌅 수요</span></div><div class="sbody"><div class="sdate">2025-04-30</div><div class="spart">시기 — 비교의 시소, 그리고 공유제</div><div class="spoint">시기는 남의 선함마저 슬퍼하게 하지만, 경쟁 없이 마음껏 누리는 공유제를 경험할 때 비로소 멈춘다.</div><a class="slink" href="2025-04-30/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">3</div><span class="b w">🌅 수요</span></div><div class="sbody"><div class="sdate">2025-06-04</div><div class="spart">나태 — 게으름 뒤에 숨은 사랑의 결핍</div><div class="spoint">나태는 눕는 것이 아니라 하나님의 부르심을 회피하는 것 — 그 자리를 떠나지 않고 매일 사랑하기로 결심하는 것이 반대편의 길이다.</div><a class="slink" href="2025-06-04/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">4</div><span class="b w">🌅 수요</span></div><div class="sbody"><div class="sdate">2025-06-11</div><div class="spart">「탐욕」 — 마음의 집착과 물질, 그리고 십일조</div><div class="spoint">탐욕스러운 게 당연해진 시대에, '이대로 10년을 살면 나는 어떤 사람이 될까'를 함께 물었다.</div><a class="slink" href="2025-06-11/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">5</div><span class="b w">🌅 수요</span></div><div class="sbody"><div class="sdate">2025-07-02</div><div class="spart">「분노」 — 무엇을 지키려는 분노인가</div><div class="spoint">당신의 분노가 지키려는 것이 고작 휴지 조각은 아닌지—분노 뒤에 숨은 두려움과 사랑을 들여다보았다.</div><a class="slink" href="2025-07-02/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">6</div><span class="b w">🌅 수요</span></div><div class="sbody"><div class="sdate">2025-07-23</div><div class="spart">「탐식」과 금식 — 마음의 습관과 즉각적 쾌락</div><div class="spoint">빠른 쾌락에 길든 시대에, 더디지만 함께 앉아 있는 시간이 주는 힘을 발견했다.</div><a class="slink" href="2025-07-23/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">7</div><span class="b w">🌅 수요</span></div><div class="sbody"><div class="sdate">2025-08-13</div><div class="spart">「정욕」과 완독 총평 — 순결, 그리고 모든 악덕의 뿌리 교만</div><div class="spoint">절벽에 매달리는 대신 도시를 건설하기로—여섯 악덕을 지나 결국 교만의 뿌리와 하나님의 기다림 앞에 섰다.</div><a class="slink" href="2025-08-13/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">8</div><span class="b w">🌅 수요</span></div><div class="sbody"><div class="sdate">2025-08-27</div><div class="spart">「매혹적인 악덕들」 완독 후 공동체 금식 나눔</div><div class="spoint">먹지 않는 그 하루가 '배고픔을 참는 날'이 아니라 '하나님을 만나는 날'이 될 때, 작은 몸의 절제가 온 마음을 그분께로 돌려놓았다.</div><a class="slink" href="2025-08-27/">이 회차 나눔·카드뉴스 보기 →</a></div></div></div>
+<div class="timeline"><div class="sess has"><div class="snum"><div class="n">1</div><span class="b w">수요</span></div><div class="sbody"><div class="sdate">2025-04-23</div><div class="spart">교만과 허영 — 목표가 나인가 하늘인가</div><div class="spoint">촘촘한 그물 같은 허영과 교만에 걸리지 않을 사람이 없다 — 다만 영광을 사랑하는 자는 그 자리를 즉시 떠난다.</div><a class="slink" href="2025-04-23/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">2</div><span class="b w">수요</span></div><div class="sbody"><div class="sdate">2025-04-30</div><div class="spart">시기 — 비교의 시소, 그리고 공유제</div><div class="spoint">시기는 남의 선함마저 슬퍼하게 하지만, 경쟁 없이 마음껏 누리는 공유제를 경험할 때 비로소 멈춘다.</div><a class="slink" href="2025-04-30/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">3</div><span class="b w">수요</span></div><div class="sbody"><div class="sdate">2025-06-04</div><div class="spart">나태 — 게으름 뒤에 숨은 사랑의 결핍</div><div class="spoint">나태는 눕는 것이 아니라 하나님의 부르심을 회피하는 것 — 그 자리를 떠나지 않고 매일 사랑하기로 결심하는 것이 반대편의 길이다.</div><a class="slink" href="2025-06-04/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">4</div><span class="b w">수요</span></div><div class="sbody"><div class="sdate">2025-06-11</div><div class="spart">「탐욕」 — 마음의 집착과 물질, 그리고 십일조</div><div class="spoint">탐욕스러운 게 당연해진 시대에, '이대로 10년을 살면 나는 어떤 사람이 될까'를 함께 물었다.</div><a class="slink" href="2025-06-11/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">5</div><span class="b w">수요</span></div><div class="sbody"><div class="sdate">2025-07-02</div><div class="spart">「분노」 — 무엇을 지키려는 분노인가</div><div class="spoint">당신의 분노가 지키려는 것이 고작 휴지 조각은 아닌지—분노 뒤에 숨은 두려움과 사랑을 들여다보았다.</div><a class="slink" href="2025-07-02/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">6</div><span class="b w">수요</span></div><div class="sbody"><div class="sdate">2025-07-23</div><div class="spart">「탐식」과 금식 — 마음의 습관과 즉각적 쾌락</div><div class="spoint">빠른 쾌락에 길든 시대에, 더디지만 함께 앉아 있는 시간이 주는 힘을 발견했다.</div><a class="slink" href="2025-07-23/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">7</div><span class="b w">수요</span></div><div class="sbody"><div class="sdate">2025-08-13</div><div class="spart">「정욕」과 완독 총평 — 순결, 그리고 모든 악덕의 뿌리 교만</div><div class="spoint">절벽에 매달리는 대신 도시를 건설하기로—여섯 악덕을 지나 결국 교만의 뿌리와 하나님의 기다림 앞에 섰다.</div><a class="slink" href="2025-08-13/">이 회차 나눔·카드뉴스 보기 →</a></div></div><div class="sess has"><div class="snum"><div class="n">8</div><span class="b w">수요</span></div><div class="sbody"><div class="sdate">2025-08-27</div><div class="spart">「매혹적인 악덕들」 완독 후 공동체 금식 나눔</div><div class="spoint">먹지 않는 그 하루가 '배고픔을 참는 날'이 아니라 '하나님을 만나는 날'이 될 때, 작은 몸의 절제가 온 마음을 그분께로 돌려놓았다.</div><a class="slink" href="2025-08-27/">이 회차 나눔·카드뉴스 보기 →</a></div></div></div>
 <h2>책을 관통한 핵심 주제</h2>
 <h3>1. 모든 악덕의 뿌리는 교만이다</h3>
 <p>회를 거듭할수록 모두가 같은 결론에 이르렀다. "모든 근원이 교만이죠." 책은 카시아누스를 빌려 <strong>교만을 나무의 뿌리이자 몸통</strong>으로, 나머지 여섯 악덕을 거기서 자라나는 가지로 묘사한다. 한 참석자는 "왜 이 책의 어느 장을 봐도 늘 교만이 걸리는지" 그제야 이해했다고 했다. 진행자는 여기서 한 걸음 더 나아갔다. "세상에 겸손한 사람은 없다. 다 교만으로 가득 차 있다. 이걸 인정하는 데서 시작한다."</p>
@@ -98,5 +107,7 @@ footer{margin-top:48px;padding-top:22px;border-top:1px solid var(--line);text-al
 <ol><li>나의 여러 악덕을 파고 내려가면 결국 만나게 되는 뿌리(교만)는, 지금 내 삶의 어떤 구체적 장면에서 드러나고 있는가?</li><li>나는 이 악덕을 '한 번의 결심'으로 끊으려 하는가, 아니면 공동체 안에서 '습관과 문화'로 다시 빚어지길 구하는가?</li><li>내가 지금 하나님의 자리에 밀어 넣고 있는 "좋은 것"(돈·인정·음식·관계·편안함)은 무엇인가?</li><li>최근 내 분노가 '지키려' 했던 것은 실제로 그 사람인가, 아니면 내가 그린 이상적 이미지인가?</li><li>이번 달, 작은 것 하나(금식·미디어 절식·소비 기준)를 하나님께 맡기는 훈련을 언제·어떻게 시작할 것인가?</li></ol>
 <h2>연결</h2>
 <ul><li>순전한 기독교 북클럽 — 14회 종합(2025.10~12)</li><li>칠죄종</li><li>교만</li><li>영성훈련</li><li>공동체</li><li>성화</li><li>금식</li><li>리베카 드영</li></ul></article>
-<footer>제작 · 안나간성도<div class="priv">이 페이지는 검색에 노출되지 않으며, 링크를 아는 분만 열람할 수 있습니다.</div></footer>
+<footer><div class="foot-mark">BooKLove</div>
+<div class="priv">제작 · 안나간성도</div>
+<div class="priv">이 페이지는 검색에 노출되지 않으며, 링크를 아는 분만 열람할 수 있습니다.</div></footer>
 </div></body></html>
